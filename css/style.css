@@ -86,3 +86,9 @@ em, .-italic {
 p {
   max-width: 65ch;
 }
+
+/* Hauptmenü (Overlay-Nav) — großformatige Menüpunkte als Display-Type */
+.navList li a,
+.subnav-list li a {
+  font-family: var(--font-display);
+}
