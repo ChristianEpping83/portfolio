@@ -33,21 +33,28 @@ Die Seite ist **outcome- und KPI-getrieben**, nicht prozess- oder passion-getrie
   nicht flächig als Hintergrund.
 - **Look:** reduziert, editorial, großzügiger Weißraum, klare typografische Hierarchie.
 
-## Technik — Tailwind CSS v4
-- Styling-Framework ist Tailwind CSS v4 über die Standalone-CLI (kein Bundler nötig).
-- Zwei Pakete installieren: `tailwindcss` + `@tailwindcss/cli`. Der alte v3-Befehl
-  `npx tailwindcss` funktioniert nicht — der CLI liegt jetzt in `@tailwindcss/cli`.
-- Eine Eingabedatei (`src/input.css`) mit `@import "tailwindcss";` als Basis.
-- Markenwerte CSS-first im `@theme`-Block definieren (keine JS-Config):
-  Fraunces/Inter als Font-Variablen, `#FF002E` als Brand-Farbe. So sind sie überall
-  als Utilities verfügbar (z. B. `font-display`, `text-brand`).
-- Build: `npx @tailwindcss/cli -i ./src/input.css -o ./dist/output.css`
-  (`--watch` für lokale Entwicklung, `--minify` für Produktion).
-- Auf Vercel den Build-Command entsprechend setzen, damit `output.css` beim
-  Deploy erzeugt wird.
-- Ansonsten statisches HTML/JS. Semantisches, barrierearmes Markup; Kontrast von
-  `#FF002E` auf Text prüfen. Responsive, Mobile-first.
-- Weitere Abhängigkeiten nur nach Rückfrage aufnehmen.
+## Technik — schlankes, modernes CSS
+- Kein Framework, kein Build-Schritt, kein npm. Statisches HTML/CSS/JS, das Vercel
+  direkt ausliefert. Die bestehende Pipeline bleibt unverändert (auf Vercel ist
+  weiterhin kein Build-Command nötig).
+- Ein zentrales Stylesheet (z. B. `css/style.css`), das von allen Seiten eingebunden
+  wird — keine verstreuten Inline-Styles.
+- Design-Tokens einmal zentral als CSS-Variablen im `:root` definieren und überall
+  darüber nutzen (nicht jeden Wert einzeln hart codieren):
+    :root {
+      --brand: #FF002E;
+      --font-display: "Fraunces", serif;
+      --font-body: "Inter", sans-serif;
+    }
+- Fraunces und Inter als Webfonts einbinden (Google Fonts oder selbst gehostet).
+- `#FF002E` bewusst und sparsam als Signature einsetzen. Für Fließtext ist der Ton
+  meist zu grell — Kontrast prüfen und die Farbe eher für Akzente als für Textfarbe
+  verwenden.
+- Semantisches, barrierearmes Markup. Responsive, Mobile-first.
+- Bestehende Grafiken weiterverwenden: referenzieren, nicht neu erzeugen.
+  Bild-Optimierung (WebP/AVIF, lazy loading, responsive Größen) ist ein späterer
+  Feinschliff, kein Neuaufbau.
+- Zusätzliche Abhängigkeiten oder ein Build-Schritt nur nach ausdrücklicher Rückfrage.
 
 ## Arbeitsweise
 - Kleine, nachvollziehbare Änderungen mit sprechenden Commit-Messages.
