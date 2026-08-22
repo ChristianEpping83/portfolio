@@ -1,0 +1,88 @@
+/*--------------------------------------------------
+	Brand-Stylesheet — Typografisches Grundgerüst
+	Geladen nach main.css, überschreibt gezielt dessen
+	Font-Variablen. main.css selbst bleibt unangetastet.
+---------------------------------------------------*/
+
+/* 01. Self-hosted Webfonts (kein Google-Fonts-Link, DSGVO) */
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/inter/inter-400.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("../fonts/inter/inter-500.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("../fonts/inter/inter-600.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("../fonts/inter/inter-700.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/fraunces/fraunces-400.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("../fonts/fraunces/fraunces-600.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Fraunces";
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/fraunces/fraunces-400italic.woff2") format("woff2");
+}
+
+/* 02. Design-Tokens */
+:root {
+  --brand: #FF002E;
+  --font-display: "Fraunces", serif;
+  --font-body: "Inter", sans-serif;
+
+  /* bestehende Template-Variablen (css/main.css) auf die neuen Tokens umleiten */
+  --font-primary: var(--font-body);
+  --font-secondary: var(--font-display);
+  --accent-color: var(--brand);
+}
+
+/* 03. Typografische Basis — reduziert, editorial */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+  font-weight: 600;
+}
+
+em, .-italic {
+  font-style: italic;
+}
+
+p {
+  max-width: 65ch;
+}
