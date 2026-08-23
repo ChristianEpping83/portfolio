@@ -184,3 +184,51 @@ p {
 .case-study-lead {
   line-height: 1.62;
 }
+
+/* Startseite-Hero — statischer Ersatz für den bisherigen Slider. Auf
+   schmalen Screens keine erzwungene 100vh-Höhe (main.css bietet dafür
+   keine sm:-Variante), Text- und Bildspalte stehen dort untereinander. */
+@media (max-width: 767px) {
+  .hero-static {
+    height: auto;
+  }
+
+  .hero-static__media {
+    height: 70vh;
+  }
+}
+
+/* Startseite — "Ausgewählte Arbeiten": Case-Titel 4px kleiner als
+   .text-3xl (main.css, 2rem) */
+#ausgewaehlte-arbeiten .portfolioCard__title {
+  font-size: 1.75rem;
+}
+
+/* Startseite — "Schwerpunkte": Headline auf Hero-H1-Größe (main.css'
+   .sectionHeading.-lg setzt sonst 4.25rem, hier wie --text-6xl/3.75rem),
+   damit "Vier Kompetenzfelder," in der Spalte nicht selbst umbricht.
+   Zusätzlich um 8px verkleinert, siehe .home-section-title unten. */
+.sectionHeading__title.schwerpunkte-title {
+  font-size: 3.25rem;
+}
+
+/* Startseite — alle Zwischen-Headlines (Section-H2) 8px kleiner als
+   main.css' .sectionHeading.-lg-Standard (4.25rem/3.5rem/3.125rem je
+   Breakpoint). Nur auf index.html verwendet (eigene Klasse statt
+   Eingriff in die main.css-Komponente, damit ueber.html/
+   index_alternativ.html unangetastet bleiben). */
+.sectionHeading__title.home-section-title {
+  font-size: 3.75rem;
+}
+
+@media (max-width: 991px) {
+  .sectionHeading__title.home-section-title {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .sectionHeading__title.home-section-title {
+    font-size: 2.625rem;
+  }
+}
