@@ -121,13 +121,12 @@ p {
 
 .footer__logo img {
   width: 7rem;
-  height: 2.375rem;
+  height: auto;
 }
 
 @media (max-width: 767px) {
   .footer__logo img {
     width: 5.5rem;
-    height: 1.875rem;
   }
 }
 
