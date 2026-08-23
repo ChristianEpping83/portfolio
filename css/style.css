@@ -130,3 +130,25 @@ p {
     height: 1.875rem;
   }
 }
+
+/* Kennzahlen-Kacheln (Case Studies) — große Fraunces-Ziffer mit schmaler
+   Akzentlinie als Marker, Label darunter. Wiederverwendbar. */
+.stat__figure {
+  position: relative;
+  display: inline-block;
+  padding-top: 1.25rem;
+}
+
+.stat__figure::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2rem;
+  height: 2px;
+  background-color: var(--brand);
+}
+
+.stat__label {
+  max-width: 22ch;
+}
