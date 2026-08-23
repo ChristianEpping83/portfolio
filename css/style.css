@@ -152,3 +152,36 @@ p {
 .stat__label {
   max-width: 22ch;
 }
+
+/* Impact-Statement (Case Studies) — abgesetzt über Fraunces kursiv,
+   nicht über Schriftstärke; schmale Akzentlinie als Marker */
+.impact-statement {
+  margin: 3.5rem 0;
+  padding-left: 1.5rem;
+  border-left: 3px solid var(--brand);
+  border-radius: 0;
+}
+
+.impact-statement p {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-weight: 400;
+  font-size: clamp(0.91rem, 1.95vw, 1.235rem);
+  line-height: 1.35;
+  color: var(--font-dark);
+  margin: 0;
+}
+
+@media (max-width: 767px) {
+  .impact-statement {
+    padding-left: 1rem;
+  }
+}
+
+/* Case-Study Lead-Absatz (Einstieg/Geschäftswert direkt unterm Masthead)
+   — line-height 10% enger als main.css' .leading-4xl (1.8 -> 1.62).
+   Konvention für alle Case Studies: statt leading-4xl diese Klasse
+   verwenden. */
+.case-study-lead {
+  line-height: 1.62;
+}
