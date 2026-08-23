@@ -198,10 +198,9 @@ p {
   }
 }
 
-/* Startseite — "Ausgewählte Arbeiten": Case-Titel 4px kleiner als
-   .text-3xl (main.css, 2rem) */
+/* Startseite — "Ausgewählte Arbeiten": Case-Titel-Größe */
 #ausgewaehlte-arbeiten .portfolioCard__title {
-  font-size: 1.75rem;
+  font-size: 1.25rem;
 }
 
 /* Startseite — "Schwerpunkte": Headline auf Hero-H1-Größe (main.css'
