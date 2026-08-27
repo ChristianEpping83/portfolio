@@ -262,9 +262,10 @@ p {
 @media (max-width: 767px) {
   #weitere-arbeiten .row.x-gap-32.y-gap-32 {
     margin: 0;
+    padding-top: 0;
   }
 
-  #weitere-arbeiten [class*="col-"] {
+  #weitere-arbeiten .row.x-gap-32.y-gap-32 > [class*="col-"] {
     flex: 0 0 100%;
     max-width: 100%;
     padding: 0;
