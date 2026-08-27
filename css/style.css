@@ -231,3 +231,52 @@ p {
     font-size: 2.625rem;
   }
 }
+
+/* Startseite — "Weitere Arbeiten": auf Mobil eine kompakte Tap-Teaser-
+   Liste statt Bildkarten-Grid. Grund: main.css' .col-lg-3/.col-sm-6
+   greifen erst ab 576px; darunter hatte die Karte kein Breiten-Limit
+   und ihr .ratio-3:4-Bild wirkte dadurch sogar größer als die 16:9-Bilder
+   der "Ausgewählte Arbeiten"-Cards. */
+.portfolioCard__arrow {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  #weitere-arbeiten .row.x-gap-32.y-gap-32 {
+    margin: 0;
+  }
+
+  #weitere-arbeiten [class*="col-"] {
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding: 0;
+  }
+
+  #weitere-arbeiten .portfolioCard {
+    position: relative;
+    display: block;
+    padding: 1rem 2.5rem 1rem 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  #weitere-arbeiten .portfolioCard__img {
+    display: none;
+  }
+
+  #weitere-arbeiten .portfolioCard__content {
+    padding: 0;
+  }
+
+  #weitere-arbeiten .portfolioCard__title {
+    margin-top: 0.125rem;
+  }
+
+  #weitere-arbeiten .portfolioCard__arrow {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    color: var(--brand);
+  }
+}
