@@ -303,3 +303,26 @@ p {
     color: var(--brand);
   }
 }
+
+/* Case Studies — interaktive Demo als iFrame eingebettet (aktuell nur
+   schako.html). Nur ab echtem Desktop (>=1260px, main.css/vendors.css'
+   xl-Breakpoint) — auf Tablet (Hoch- und Querformat) und Mobil (Hoch-
+   und Querformat) wird der komplette Abschnitt inkl. Text ausgeblendet. */
+.case-embed-section {
+  display: none;
+}
+
+@media (min-width: 1260px) {
+  .case-embed-section {
+    display: block;
+  }
+}
+
+.case-embed {
+  width: 100%;
+  height: 80vh;
+  min-height: 32rem;
+  max-height: 56.25rem;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 0;
+}
