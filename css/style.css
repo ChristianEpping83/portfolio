@@ -186,15 +186,29 @@ p {
 }
 
 /* Startseite-Hero — statischer Ersatz für den bisherigen Slider. Auf
-   schmalen Screens keine erzwungene 100vh-Höhe (main.css bietet dafür
-   keine sm:-Variante), Text- und Bildspalte stehen dort untereinander. */
-@media (max-width: 767px) {
+   Tablet Hochformat und Mobil (<=991px) wird das Foto ausgeblendet und
+   die Textspalte nimmt die volle Breite ein; keine erzwungene
+   100vh-Höhe mehr (main.css bietet dafür keine sm:-Variante). */
+@media (max-width: 991px) {
   .hero-static {
     height: auto;
   }
 
   .hero-static__media {
-    height: 70vh;
+    display: none;
+  }
+
+  .hero-static__text {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+/* Startseite-Hero — H1 auf Mobil 30% kleiner als .text-6xl (main.css,
+   3.75rem), damit sie dort nicht zu wuchtig wirkt */
+@media (max-width: 767px) {
+  .hero-static__title {
+    font-size: 2.625rem;
   }
 }
 
@@ -228,7 +242,11 @@ p {
 
 @media (max-width: 767px) {
   .sectionHeading__title.home-section-title {
-    font-size: 2.625rem;
+    font-size: 2.01rem;
+  }
+
+  .sectionHeading__title.schwerpunkte-title {
+    font-size: 2.48rem;
   }
 }
 
