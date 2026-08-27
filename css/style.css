@@ -175,6 +175,10 @@ p {
   .impact-statement {
     padding-left: 1rem;
   }
+
+  .impact-statement p {
+    font-size: 1.1rem;
+  }
 }
 
 /* Case-Study Lead-Absatz (Einstieg/Geschäftswert direkt unterm Masthead)
