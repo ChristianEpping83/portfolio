@@ -93,6 +93,32 @@ p {
   font-family: var(--font-display);
 }
 
+/* Hauptmenü "Arbeiten" — Ausgewählte Arbeiten (Standardgröße, s.o.)
+   vs. Weitere Arbeiten (etwas kleiner), gleiches Verhältnis wie auf der
+   Startseite. main.css' .subnav-list li a-Tiers: 2.75rem / 2.25rem
+   (<=991px) / 2rem (<=575px) / 2.84vw (>=1600px). */
+.subnav-list li.subnav-item--secondary a {
+  font-size: 1.9rem;
+}
+
+@media (max-width: 991px) {
+  .subnav-list li.subnav-item--secondary a {
+    font-size: 1.55rem;
+  }
+}
+
+@media (max-width: 575px) {
+  .subnav-list li.subnav-item--secondary a {
+    font-size: 1.4rem;
+  }
+}
+
+@media (min-width: 1600px) {
+  .subnav-list li.subnav-item--secondary a {
+    font-size: 1.95vw;
+  }
+}
+
 /* Logo — Header: .header__logo hat in main.css keine eigene Breite/Höhe.
    Die Cross-Fade-Bilder sind absolut positioniert mit width:100% — ohne
    eine definierte Containergröße fällt das auf die volle Intrinsic-Größe
