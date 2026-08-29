@@ -356,6 +356,32 @@ p {
   box-shadow: 0 6px 24px -2px rgba(119, 139, 165, 0.2);
 }
 
+/* Hauptmenü — "Impressum" / "Datenschutz": deutlich kleiner und gedämpfter
+   als "Arbeiten" / "Über mich" gehalten, damit der Fokus im Menü auf den
+   inhaltlichen Punkten liegt. */
+.navList li.navList-item--meta a {
+  font-size: 1.15rem;
+  color: rgba(255, 255, 255, 0.55);
+}
+
+@media (max-width: 991px) {
+  .navList li.navList-item--meta a {
+    font-size: 1.05rem;
+  }
+}
+
+@media (max-width: 575px) {
+  .navList li.navList-item--meta a {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 1600px) {
+  .navList li.navList-item--meta a {
+    font-size: 1.1vw;
+  }
+}
+
 /* Über mich — "Beruflicher Werdegang" / "Ausbildungen & Zertifikate":
    Listen-Zeilen mit dünnem Trennstrich */
 .werdegang-item {
