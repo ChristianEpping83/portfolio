@@ -955,10 +955,10 @@ class Component extends DCLogic {
     return h('div',{className:'rail'+(open?' open':'')+(this.state.fullscreen?' hid':'')},
       h('div',{className:'rail-head'},
         h('button',{className:'rico rico-chev',style:{width:44,flex:'none'},title:open?'Menü einklappen':'Menü ausklappen',onClick:()=>this.setState({railOpen:!open})},this.icon('chevRight',21,2))),
-      h('button',{className:'rprofile',title:open?null:'Alexander Bacher',onClick:()=>this.toast('Profil')},
+      h('button',{className:'rprofile',title:open?null:'Markus Vogler',onClick:()=>this.toast('Profil')},
         h('div',{className:'ravatar'},
-          h('img',{src:(window.__resources&&window.__resources.userAvatar)||'assets/avatar-placeholder.png',alt:'Alexander Bacher'})),
-        h('span',{className:'rlbl'},'Alexander Bacher')),
+          h('img',{src:(window.__resources&&window.__resources.userAvatar)||'assets/avatar-placeholder.png',alt:'Markus Vogler'})),
+        h('span',{className:'rlbl'},'Markus Vogler')),
       h('div',{style:{height:6}}),
       item('dashboard','grid','Dashboard'),
       item('projects','folders','Projekte'),
@@ -982,13 +982,13 @@ class Component extends DCLogic {
     const cols=[['#0b4d2c','#0f6b3c'],['#c9a227','#e9c964'],['#1d4e6b','#57b8e8'],['#5c0f38','#8d1a55'],['#8d1a6b','#c95aa6'],['#294a3a','#4f7f63'],['#3a2f6b','#6f5fc0'],['#6b3a1d','#b06a35']];
     const names=['Heinrich-Heine Universität Düsseldorf','Testing SCHAKOnext','Messehalle Düsseldorf','Flughafen Berlin','Viditorium Maximum HH Vision Pro 2028','Medizinische Hochschule Hannover','Universitätsklinikum Freiburg','Stadtwerke Karlsruhe – Neubau Verwaltung','Flughafen Stuttgart Terminal 3','Rathaus Ludwigsburg Sanierung','Charité Campus Mitte – Haus 12','Technische Universität München Chemie','Sparkasse Bodensee Hauptstelle','Klinikum Nürnberg Süd','Messe Frankfurt Halle 5','Landgericht Mannheim','Schulzentrum Tuttlingen','Robert-Bosch-Krankenhaus Stuttgart','Bürocampus Media Works Köln','Hotel Seeblick Konstanz','Rechenzentrum Datapark Frankfurt','Produktionshalle Villingen-Schwenningen','Universitätsbibliothek Tübingen','Pflegezentrum St. Anna Ulm'];
     const fixed=[
-      {phase:'Ausschreibung / Angebot',role:'Administrator',days:62,by:'Christian Epping'},
-      {phase:'Planung',role:'Administrator',days:60,by:'Christian Epping'},
-      {phase:'Planung',role:'Administrator',days:64,by:'Christian Epping'},
-      {phase:'Ausführung',role:'Administrator',days:61,by:'Christian Epping'},
-      {phase:'Planung',role:'Mitwirkender',days:11,by:'Yannick Frühwirt',shared:true}
+      {phase:'Ausschreibung / Angebot',role:'Administrator',days:62,by:'Lena Brandt'},
+      {phase:'Planung',role:'Administrator',days:60,by:'Lena Brandt'},
+      {phase:'Planung',role:'Administrator',days:64,by:'Lena Brandt'},
+      {phase:'Ausführung',role:'Administrator',days:61,by:'Lena Brandt'},
+      {phase:'Planung',role:'Mitwirkender',days:11,by:'Jonas Wieland',shared:true}
     ];
-    const by=['Christian Epping','Yannick Frühwirt','Alexander Bacher','Sandra Keller'];
+    const by=['Lena Brandt','Jonas Wieland','Markus Vogler','Nina Fromm'];
     this._pd=names.map((n,i)=>{
       const f=fixed[i];
       return {

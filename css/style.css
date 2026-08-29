@@ -319,10 +319,13 @@ p {
 }
 
 .case-embed {
-  width: 100%;
+  display: block;
+  width: 90%;
+  margin: 0 auto;
   height: 80vh;
   min-height: 32rem;
   max-height: 56.25rem;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 0;
+  box-shadow: 0 6px 24px -2px rgba(119, 139, 165, 0.2);
 }
