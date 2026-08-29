@@ -356,14 +356,6 @@ p {
   box-shadow: 0 6px 24px -2px rgba(119, 139, 165, 0.2);
 }
 
-/* Über mich — "Führung & Verantwortung": kompakte Credential-Chips mit
-   schmaler Akzentlinie (gleiches Marker-Prinzip wie .impact-statement) */
-.credential-chip {
-  padding-left: 1.25rem;
-  border-left: 3px solid var(--brand);
-  border-radius: 0;
-}
-
 /* Über mich — "Beruflicher Werdegang" / "Ausbildungen & Zertifikate":
    Listen-Zeilen mit dünnem Trennstrich */
 .werdegang-item {
