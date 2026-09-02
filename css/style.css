@@ -156,6 +156,45 @@ p {
   }
 }
 
+/* main.css definiert die x-gap-/y-gap-Utility-Skala nur ab 32px (16px-Stufe
+   fehlt) — dadurch hatte die Hero-CTA-Reihe keinen Abstand, wenn die Buttons
+   auf schmalen Viewports untereinander umbrechen. */
+.x-gap-16 {
+  margin-left: -0.5rem;
+  margin-right: -0.5rem;
+}
+
+.x-gap-16 > * {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.y-gap-16 {
+  margin-top: -0.5rem;
+  margin-bottom: -0.5rem;
+}
+
+.y-gap-16 > * {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+/* Hero-CTAs (z.B. Über mich): auf sehr schmalen Viewports volle Breite und
+   damit für Links- und Rechtshänder gleichermaßen gut erreichbar, statt
+   schmaler, aneinandergeklebter Buttons. */
+@media (max-width: 575px) {
+  .hero-cta-row > .col-auto {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .hero-cta-row .button {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+}
+
 /* Kennzahlen-Kacheln (Case Studies) — große Fraunces-Ziffer mit schmaler
    Akzentlinie als Marker, Label darunter. Wiederverwendbar. */
 .stat__figure {
@@ -216,16 +255,30 @@ p {
 }
 
 /* Startseite-Hero — statischer Ersatz für den bisherigen Slider. Auf
-   Tablet Hochformat und Mobil (<=991px) wird das Foto ausgeblendet und
-   die Textspalte nimmt die volle Breite ein; keine erzwungene
-   100vh-Höhe mehr (main.css bietet dafür keine sm:-Variante). */
+   Tablet Hochformat und Mobil (<=991px) wird statt des breiten Desktop-
+   Headerbilds dasselbe Porträt wie im "Über mich"-Hero gezeigt (eigenes
+   Markup mit Modifier-Klassen, da main.css keine sm:-Variante für ein
+   Bild-Austauschen bietet); in voller Breite unterhalb des Texts, feste
+   Höhe statt 100vh-Spalte neben dem Text. Ab 992px bleibt die bisherige
+   Desktop-Darstellung (volle Höhe, Header-Bild neben dem Text) unverändert. */
+.hero-static__media--mobile {
+  display: none;
+}
+
 @media (max-width: 991px) {
   .hero-static {
     height: auto;
   }
 
-  .hero-static__media {
+  .hero-static__media--desktop {
     display: none;
+  }
+
+  .hero-static__media--mobile {
+    display: block;
+    flex: 0 0 100%;
+    max-width: 100%;
+    height: 70vh;
   }
 
   .hero-static__text {
