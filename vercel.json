@@ -1,0 +1,18 @@
+{
+  "redirects": [
+    { "source": "/ueber.html", "destination": "/de/ueber.html", "permanent": true },
+    { "source": "/impressum.html", "destination": "/de/impressum.html", "permanent": true },
+    { "source": "/datenschutz.html", "destination": "/de/datenschutz.html", "permanent": true },
+    { "source": "/lohmannrauscher.html", "destination": "/de/lohmannrauscher.html", "permanent": true },
+    { "source": "/union.html", "destination": "/de/union.html", "permanent": true },
+    { "source": "/schako.html", "destination": "/de/schako.html", "permanent": true },
+    { "source": "/provita.html", "destination": "/de/provita.html", "permanent": true },
+    { "source": "/lumifai.html", "destination": "/de/lumifai.html", "permanent": true },
+    { "source": "/e2_pcs.html", "destination": "/de/e2_pcs.html", "permanent": true },
+    { "source": "/garagenkonfigurator.html", "destination": "/de/garagenkonfigurator.html", "permanent": true },
+    { "source": "/puresleben.html", "destination": "/de/puresleben.html", "permanent": true },
+    { "source": "/leistenschneider.html", "destination": "/de/leistenschneider.html", "permanent": true },
+    { "source": "/wilbers.html", "destination": "/de/wilbers.html", "permanent": true },
+    { "source": "/kibek.html", "destination": "/de/kibek.html", "permanent": true }
+  ]
+}

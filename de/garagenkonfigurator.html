@@ -8,27 +8,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- Stylesheets -->
-  <link rel="stylesheet" href="css/vendors.css">
-  <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="../css/vendors.css">
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/style.css">
 
   <!-- Favicon -->
-  <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
-  <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
-  <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png">
-  <link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-icon-76x76.png">
-  <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-icon-114x114.png">
-  <link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-icon-120x120.png">
-  <link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-icon-144x144.png">
-  <link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-icon-152x152.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
-  <link rel="icon" type="image/png" sizes="192x192" href="img/favicon/android-icon-192x192.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
-  <link rel="manifest" href="img/favicon/manifest.json">
+  <link rel="apple-touch-icon" sizes="57x57" href="../img/favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="../img/favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="../img/favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="../img/favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="../img/favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="../img/favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="../img/favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="../img/favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../img/favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="../img/favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="../img/favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon/favicon-16x16.png">
+  <link rel="manifest" href="../img/favicon/manifest.json">
   <meta name="msapplication-TileColor" content="#ffffff">
-  <meta name="msapplication-TileImage" content="img/favicon/ms-icon-144x144.png">
+  <meta name="msapplication-TileImage" content="../img/favicon/ms-icon-144x144.png">
   <meta name="theme-color" content="#ffffff">
 
   <title>Christian Epping</title>
@@ -43,7 +43,7 @@
 
     <div class="preloader__progress">
       <div class="preloader__progress__inner"></div>
-      <img src="img/general/loader.svg" alt="preloader image" class="preloader__img">
+      <img src="../img/general/loader.svg" alt="preloader image" class="preloader__img">
     </div>
   </div>
   <!-- preloader end -->
@@ -82,14 +82,15 @@
         <div class="header__bar">
           <div class="header__logo js-header-logo">
             <a data-barba href="index.html">
-              <img class="header__logo__light js-lazy" src="#" data-src="img/logo/logo-light.svg" alt="Logo">
+              <img class="header__logo__light js-lazy" src="#" data-src="../img/logo/logo-light.svg" alt="Logo">
             </a>
             <a data-barba href="index.html">
-              <img class="header__logo__dark js-lazy" src="#" data-src="img/logo/logo-dark.svg" alt="Logo">
+              <img class="header__logo__dark js-lazy" src="#" data-src="../img/logo/logo-dark.svg" alt="Logo">
             </a>
           </div>
 
           <div class="header__menu js-header-menu">
+            <a data-barba href="../en/index.html" class="header__lang">EN</a>
             <button type="button" class="nav-button-open js-nav-open">
               <i class="icon" data-feather="menu"></i>
               <span></span>
@@ -120,7 +121,7 @@
                 <div class="nav__content__left">
                   <div class="navList__wrap">
                     <ul class="navList js-navList">
-
+                      
 						<li class="menu-item-has-children">
                         <a>Arbeiten</a>
 
@@ -161,7 +162,7 @@
                           </li>
                         </ul>
                       </li>
-
+						
                           <li>
                             <a data-barba href="ueber.html">Über mich</a>
                           </li>
@@ -172,7 +173,7 @@
                             <a data-barba href="datenschutz.html">Datenschutz</a>
                           </li>
                         </ul>
-
+					  
                   </div>
                 </div>
 
@@ -226,7 +227,7 @@
       <!-- page header start -->
       <section class="masthead -type-work-1 -full-screen bg-black sm:text-center js-masthead-type-work-1 js-bg">
         <div data-parallax="0.7" class="masthead__bg overlay-black-md js-image">
-          <div data-parallax-target class="bg-image js-lazy js-bg-item" data-bg="img/projects/horizontal/19.png"></div>
+          <div data-parallax-target class="bg-image js-lazy js-bg-item" data-bg="../img/projects/horizontal/7.jpg"></div>
         </div>
 
         <div class="masthead__content">
@@ -235,13 +236,13 @@
               <div class="col-xl-10 col-sm-10 z-3">
                 <div data-split="lines">
                   <p class="masthead__subtitle text-lg sm:text-base text-white mb-32 sm:mb-24 js-subtitle">
-                    UX/UI-Design
+                    UX-/UI-Design
                   </p>
                 </div>
 
                 <div data-split="lines">
                   <h1 class="masthead__title text-white fw-700 js-title">
-                    Wilbers Suspension
+                    Rekers Betonwerk
                   </h1>
                 </div>
 
@@ -252,7 +253,7 @@
                       <div class="masthead__info">
                         <div data-split="lines" class="masthead__item js-info-item">
                           <h5 class="text-lg leading-sm fw-600 text-white">Rolle</h5>
-                          <p class="text-lg leading-sm text-light mt-12 sm:mt-8">Senior UX/UI-Designer</p>
+                          <p class="text-lg leading-sm text-light mt-12 sm:mt-8">Senior UX-/UI-Designer</p>
                         </div>
                       </div>
                     </div>
@@ -261,7 +262,7 @@
                       <div class="masthead__info">
                         <div data-split="lines" class="masthead__item js-info-item">
                           <h5 class="text-lg leading-sm fw-600 text-white">Start</h5>
-                          <p class="text-lg leading-sm text-light mt-12 sm:mt-8">03|2024</p>
+                          <p class="text-lg leading-sm text-light mt-12 sm:mt-8">11|2021</p>
                         </div>
                       </div>
                     </div>
@@ -270,7 +271,18 @@
                       <div class="masthead__info">
                         <div data-split="lines" class="masthead__item js-info-item">
                           <h5 class="text-lg leading-sm fw-600 text-white">Launch</h5>
-                          <p class="text-lg leading-sm text-light mt-12 sm:mt-8">05|2024</p>
+                          <p class="text-lg leading-sm text-light mt-12 sm:mt-8">04|2022</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-auto offset-lg-1 col-sm-6">
+                      <div class="masthead__info">
+                        <div data-split="lines" class="masthead__item js-info-item">
+                          <h5 class="text-lg leading-sm fw-600 text-white">Website</h5>
+                          <a href="https://www.rekers-beton.de/produkte/fertiggaragen/garagenkonfigurator/" class="button d-block fw-500 text-lg leading-sm text-white mt-12 sm:mt-8">
+                            Garagenkonfigurator
+                          </a>
                         </div>
                       </div>
                     </div>
@@ -284,8 +296,9 @@
       </section>
       <!-- page header end -->
 
-
-				      <!-- section start -->
+		
+		
+						      <!-- section start -->
       <section class="layout-pt-lg layout-pb-lg">
         <!-- container start -->
         <div class="container">
@@ -295,7 +308,7 @@
             <div class="col-auto">
               <div class="d-flex text-xs tracking-md pt-4">
                 <p class="text-accent fw-600 mr-16">01.-</p>
-                <p class="uppercase fw-500">Anforderungen</p>
+                <p class="uppercase fw-500">Bestandsaufnahme</p>
               </div>
             </div>
 
@@ -303,13 +316,15 @@
             <div class="col-xl-7 col-lg-8">
               <div class="md:mt-20">
                 <h2 class="text-3xl fw-600">
-                  ReDesign eCommerce
+                  Gamification und Vertriebs-Support
                 </h2>
                 <p class="text-lg text-black mt-24 sm:mt-16">
-                  Aufgrund eines technischen Relaunches des in die Jahre gekommenen Online-Shops wurde ich mich einem ReDesign des Online-Shops beauftragt.
+                  Der Vertrieb des Unternehmens, welches Fertiggaragen herstellt, sollte entlastet werden. Hierzu möchte der Kunde einen einfach zu bedienenden Konfigurator für seine Fertiggaragen auf seiner Website anbieten. Dieser soll dem Kunden ermöglichen, 
+				  sich auf spielerische Weise eine Wunsch-Garage zusammenzustellen. Anschließend soll diese Konfiguration durch den Kunden beim Vertrieb des Unternehmens angefragt 
+				  werden können. 
                 </p>
                 <p class="leading-5xl mt-24 sm:mt-16">
-                  Das ReDesign sollte sowohl optisch als auch im Hinblick einer Konvertierung untersucht und optimiert werden. Hierzu wurde ebenfalls das Corporate Design des Kunden im Hinblick auf die Zielgruppe sowie modernen UI-Elementen verändert.
+                  Meta-Ziel dieser Entwicklung ist, dass beim potentiellen Kunden ein tieferes Kaufinteresse geweckt wird. Ebenso werden durch den spielerischen Prozess, welcher mit einer Anfrage enden soll, bereits wesentliche und immer wieder auftauchende Fragen seitens des Vertriebs vorab geklärt und man kann direkt in einen intensiveren Austausch mit dem Kunden eintauchen. Dieser soll anschließend zu einer Erhöhung der Verkaufschancen führen. 
                 </p>
               </div>
             </div>
@@ -320,25 +335,21 @@
         <!-- container end -->
       </section>
       <!-- section end -->
-
+		
       <!-- section start -->
       <div>
         <!-- row start -->
         <div class="row no-gutters">
-
-		<div class="col-12">
+          <div class="col-12">
             <div data-parallax="0.5" class="h-80vh">
-              <div data-parallax-target class="bg-image js-lazy" data-bg="img/project19/wide-5.png"></div>
+              <div data-parallax-target class="bg-image js-lazy" data-bg="../img/project7/wide-2.jpg"></div>
             </div>
           </div>
-        </div>
-
-
+		</div>
 	  </div>
 	   <!-- row end -->
       <!-- section end -->
-
-
+		
 
 						      <!-- section start -->
       <section class="layout-pt-lg layout-pb-lg">
@@ -350,7 +361,7 @@
             <div class="col-auto">
               <div class="d-flex text-xs tracking-md pt-4">
                 <p class="text-accent fw-600 mr-16">02.-</p>
-                <p class="uppercase fw-500">Design</p>
+                <p class="uppercase fw-500">Desingprozess</p>
               </div>
             </div>
 
@@ -358,13 +369,14 @@
             <div class="col-xl-7 col-lg-8">
               <div class="md:mt-20">
                 <h2 class="text-3xl fw-600">
-                  Iterativer Designprozess
+                  Konzeptionierung und Visualisierung
                 </h2>
                 <p class="text-lg text-black mt-24 sm:mt-16">
-                  Wir haben qualitative Interviews mit Vertrieb und Marketing geführt, sowie Personas zur Identifikation der Bedürfnisse der Zielgruppe erstellt.
+                  Hier erfolgte die Ermittlung wesentlicher und notwendiger Bestandteile des Konfigurators im Rahmen eines Workshops mit dem Kunden. Diese wurden dann in eine Step-by-Step-Methodik umgewandelt, so das der User nicht zu viele Entscheidungen auf 
+				  einmal treffen muss und ein spielerischer und nicht überfordernder Ansatz gewährleistet ist. Ebenso wurde für die einzelnen Steps eine individuelle Iconografie erstellt, welche Postitionierungen von wesentlichen Elementen des Produktes darstellen. 
                 </p>
                 <p class="leading-5xl mt-24 sm:mt-16">
-                  Im Anschluss daran wurden die Erkenntnisse in Prototypen überführt und in einem iterativen Prozess stetig auf die Bedürfnisse der Zielgruppe optimiert.
+                  Optimiert werden sollte der Konfigurator für eine Nutzung auf einem Tablet, jedoch auch über den Desktop gut nutzbar sein. Ein Vorschau-Bereich sollte dem User einen ungefähren optischen Eindruck seiner späteren Garage vermitteln. Nach erfolgter Prototypen-Entwicklung wurde dieser nach Abnahme durch den Kunden im Rahmen eines internen Kick-Offs dem Entwicklerteam übergeben.
                 </p>
               </div>
             </div>
@@ -375,35 +387,37 @@
         <!-- container end -->
       </section>
       <!-- section end -->
-
-
-
+		
+		  
       <!-- section start -->
       <div>
         <!-- row start -->
         <div class="row no-gutters">
-
-		  <div class="col-md-6">
+          <div class="col-md-6">
             <div data-parallax="0.5" class="ratio ratio-1:1">
-              <div data-parallax-target class="bg-image js-lazy" data-bg="img/project19/square-1.png"></div>
+              <div data-parallax-target class="bg-image js-lazy" data-bg="../img/project7/square-1.jpg"></div>
             </div>
           </div>
-
 
           <div class="col-md-6">
             <div data-parallax="0.5" class="ratio ratio-1:1">
-              <div data-parallax-target class="bg-image js-lazy" data-bg="img/project19/square-2.png"></div>
+              <div data-parallax-target class="bg-image js-lazy" data-bg="../img/project7/square-2.jpg"></div>
             </div>
           </div>
-		</div>
-
-	 </div>
-
+			
+		 <div class="col-12">
+            <div data-parallax="0.5" class="h-80vh">
+              <div data-parallax-target class="bg-image js-lazy" data-bg="../img/project7/wide-4.jpg"></div>
+            </div>
+          </div>
+        </div>
+       </div>
+		  
         <!-- row end -->
       <!-- section end -->
 
-
-								      <!-- section start -->
+		
+<!-- section start -->
       <section class="layout-pt-lg layout-pb-lg">
         <!-- container start -->
         <div class="container">
@@ -421,13 +435,14 @@
             <div class="col-xl-7 col-lg-8">
               <div class="md:mt-20">
                 <h2 class="text-3xl fw-600">
-                  Modernerer und optimierter eCommerce Shop
+                  Garagenkonfigurator
                 </h2>
                 <p class="text-lg text-black mt-24 sm:mt-16">
-                  Nach erfolgreichem ReDesign des eCommerce Shops bestätigte der Kunde sowohl höhere Konvertierungsraten als auch weniger Reklamationen.
+                  Durch die Umsetzung der Lösung wurde das Ziel der Entlastung des Vertriebs erfüllt. Generelle Feedbacks der potentiellen Kunden im Rahmen von Befragungen dieser neuen Funktion waren durchweg positiv sowohl im Hinblick auf die generelle Möglichkeit seine Wunschgarage zu konfigurieren als auch
+				  die einfache Usability des Konfigurators. 
                 </p>
                 <p class="leading-5xl mt-24 sm:mt-16">
-Der Shop wurde nach Launch stetig um weitere digitale Zusatzprodukte wie z. B. eine virtuellen Beratungsassistenten erweitert und somit das MVP stetig verbessert.
+                  Somit wurden jegliche Anforderungen an dieses digitale Gamification-Produkt erfüllt, obwohl das finale Design aufgrund von Budget-Kürzungen seitens des Kunden nicht vollends dem konzeptionierten und ausgestalteten Prototypen entspricht.
                 </p>
               </div>
             </div>
@@ -438,25 +453,49 @@ Der Shop wurde nach Launch stetig um weitere digitale Zusatzprodukte wie z. B. e
         <!-- container end -->
       </section>
       <!-- section end -->
-
-
+		
+		
+		  
 	 <!-- section start -->
       <div>
         <!-- row start -->
         <div class="row no-gutters">
           <div class="col-12">
             <div data-parallax="0.5" class="h-80vh">
-              <div data-parallax-target class="bg-image js-lazy" data-bg="img/project19/wide-3.png"></div>
+              <div data-parallax-target class="bg-image js-lazy" data-bg="../img/project7/wide-9.jpg"></div>
             </div>
-          </div>
-		<div class="col-12">
-            <div data-parallax="0.5" class="h-80vh">
-              <div data-parallax-target class="bg-image js-lazy" data-bg="img/project19/wide-4.png"></div>
-            </div>
-          </div>
-
-		  	   </div>
+          </div>		
+	   </div>		  
         <!-- row end -->
+      <!-- section end -->
+		  
+	<!-- section start -->
+      <section data-parallax="0.7" class="layout-pt-lg layout-pb-lg">
+        <div data-parallax-target class="overlay-black-md bg-image js-lazy" data-bg="../img/project7/wide-4.jpg"></div>
+
+        <!-- container start -->
+        <div class="container z-5">
+          <!-- row start -->
+          <div class="row justify-content-center text-center">
+            <div class="col-12">
+              <p class="text-sm uppercase tracking-lg text-white mb-20">
+                Projekt live ansehen
+              </p>
+
+              <h2 class="text-5xl sm:text-5xl xs:text-4xl leading-sm fw-700 text-white">
+                Sie möchten das Endprodukt erleben?
+              </h2>
+
+              <a href="https://www.rekers-beton.de/produkte/fertiggaragen/garagenkonfigurator/" target="_blank" 
+				 class="button -md -white text-black mt-32">
+                PROJEKT ANSEHEN
+              </a>
+            </div>
+          </div>
+          <!-- row end -->
+        </div>
+        <!-- container end -->
+      </section>
       <!-- section end -->
 
 
@@ -470,7 +509,7 @@ Der Shop wurde nach Launch stetig um weitere digitale Zusatzprodukte wie z. B. e
             <div class="row y-gap-48 justify-content-between">
               <div class="col-lg-auto col-sm-12">
                 <a href="index.html" class="footer__logo text-white">
-                  <img class="js-lazy" src="#" data-src="img/logo/logo-light.svg" alt="Logo">
+                  <img class="js-lazy" src="#" data-src="../img/logo/logo-light.svg" alt="Logo">
                 </a>
               </div>
 
@@ -481,8 +520,8 @@ Der Shop wurde nach Launch stetig um weitere digitale Zusatzprodukte wie z. B. e
 
                 <div class="footer__content text-base text-light mt-16 sm:mt-12">
                   <p>Kolpingstraße 7, 48629 Metelen</p>
-                  <p class="mt-8"><a href="mailto:info@christian-epping.com">info@christian-epping.com</a></p>
-                  <p class="mt-8"><a href="tel:01705508124">+49 170 55 08 124</a></p>
+                  <p class="mt-8"><a href="mailto:info@christian-epping.com">info@christian-epping.com</a></p> 
+                  <p class="mt-8"><a href="tel:01705508124">+49 170 55 08 124</a></p> 
                 </div>
               </div>
 
@@ -523,7 +562,7 @@ Der Shop wurde nach Launch stetig um weitere digitale Zusatzprodukte wie z. B. e
               <div class="col">
                 <div class="footer__copyright">
                   <p class="text-light">
-                    @ Christian Epping.
+                    @ Christian Epping. Mit Liebe gemacht.
                   </p>
                 </div>
               </div>
@@ -544,8 +583,8 @@ Der Shop wurde nach Launch stetig um weitere digitale Zusatzprodukte wie z. B. e
 
 
   <!-- JavaScript -->
-  <script src="js/vendors.js"></script>
-  <script src="js/main.js"></script>
+  <script src="../js/vendors.js"></script>
+  <script src="../js/main.js"></script>
 
 </body>
 

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 
 <head>
 
@@ -8,30 +8,35 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- Stylesheets -->
-  <link rel="stylesheet" href="css/vendors.css">
-  <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="../css/vendors.css">
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/style.css">
 
   <!-- Favicon -->
-  <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
-  <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
-  <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png">
-  <link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-icon-76x76.png">
-  <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-icon-114x114.png">
-  <link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-icon-120x120.png">
-  <link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-icon-144x144.png">
-  <link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-icon-152x152.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
-  <link rel="icon" type="image/png" sizes="192x192" href="img/favicon/android-icon-192x192.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
-  <link rel="manifest" href="img/favicon/manifest.json">
+  <link rel="apple-touch-icon" sizes="57x57" href="../img/favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="../img/favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="../img/favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="../img/favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="../img/favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="../img/favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="../img/favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="../img/favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../img/favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="../img/favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="../img/favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon/favicon-16x16.png">
+  <link rel="manifest" href="../img/favicon/manifest.json">
   <meta name="msapplication-TileColor" content="#ffffff">
-  <meta name="msapplication-TileImage" content="img/favicon/ms-icon-144x144.png">
+  <meta name="msapplication-TileImage" content="../img/favicon/ms-icon-144x144.png">
   <meta name="theme-color" content="#ffffff">
 
-  <title>Christian Epping</title>
+  <!-- Language versions -->
+  <link rel="alternate" hreflang="de" href="https://christian-epping.com/de/ueber.html">
+  <link rel="alternate" hreflang="en" href="https://christian-epping.com/en/ueber.html">
+  <link rel="alternate" hreflang="x-default" href="https://christian-epping.com/">
+
+  <title>Christian Epping — About</title>
 </head>
 
 <body class="preloader-visible" data-barba="wrapper">
@@ -43,7 +48,7 @@
 
     <div class="preloader__progress">
       <div class="preloader__progress__inner"></div>
-      <img src="img/general/loader.svg" alt="preloader image" class="preloader__img">
+      <img src="../img/general/loader.svg" alt="preloader image" class="preloader__img">
     </div>
   </div>
   <!-- preloader end -->
@@ -82,14 +87,15 @@
         <div class="header__bar">
           <div class="header__logo js-header-logo">
             <a data-barba href="index.html">
-              <img class="header__logo__light js-lazy" src="#" data-src="img/logo/logo-light.svg" alt="Logo">
+              <img class="header__logo__light js-lazy" src="#" data-src="../img/logo/logo-light.svg" alt="Logo">
             </a>
             <a data-barba href="index.html">
-              <img class="header__logo__dark js-lazy" src="#" data-src="img/logo/logo-dark.svg" alt="Logo">
+              <img class="header__logo__dark js-lazy" src="#" data-src="../img/logo/logo-dark.svg" alt="Logo">
             </a>
           </div>
 
           <div class="header__menu js-header-menu">
+            <a data-barba href="../de/ueber.html" class="header__lang">DE</a>
             <button type="button" class="nav-button-open js-nav-open">
               <i class="icon" data-feather="menu"></i>
               <span></span>
@@ -120,9 +126,9 @@
                 <div class="nav__content__left">
                   <div class="navList__wrap">
                     <ul class="navList js-navList">
-                      
+
 						<li class="menu-item-has-children">
-                        <a>Arbeiten</a>
+                        <a>Work</a>
 
                         <ul class="subnav-list">
                           <li>
@@ -136,43 +142,43 @@
                           </li>
 
                           <li class="subnav-item--secondary">
-                            <a data-barba href="provita.html">Provita Medical</a>
+                            <a href="../de/provita.html">Provita Medical</a>
                           </li>
                           <li class="subnav-item--secondary">
-                            <a data-barba href="lumifai.html">LUMIFAI</a>
+                            <a href="../de/lumifai.html">LUMIFAI</a>
                           </li>
                           <li class="subnav-item--secondary">
-                            <a data-barba href="e2_pcs.html">e² project cloud systems</a>
+                            <a href="../de/e2_pcs.html">e² project cloud systems</a>
                           </li>
                           <li class="subnav-item--secondary">
-                            <a data-barba href="garagenkonfigurator.html">Rekers Betonwerk</a>
+                            <a href="../de/garagenkonfigurator.html">Rekers Betonwerk</a>
                           </li>
                           <li class="subnav-item--secondary">
-                            <a data-barba href="puresleben.html">Pures Leben</a>
+                            <a href="../de/puresleben.html">Pures Leben</a>
                           </li>
                           <li class="subnav-item--secondary">
-                            <a data-barba href="leistenschneider.html">Foto Leistenschneider</a>
+                            <a href="../de/leistenschneider.html">Foto Leistenschneider</a>
                           </li>
                           <li class="subnav-item--secondary">
-                            <a data-barba href="wilbers.html">Wilbers Suspension</a>
+                            <a href="../de/wilbers.html">Wilbers Suspension</a>
                           </li>
                           <li class="subnav-item--secondary">
-                            <a data-barba href="kibek.html">Teppich Kibek</a>
+                            <a href="../de/kibek.html">Teppich Kibek</a>
                           </li>
                         </ul>
                       </li>
-						
+
                           <li>
-                            <a data-barba href="ueber.html">Über mich</a>
+                            <a data-barba href="ueber.html">About</a>
                           </li>
                           <li class="navList-item--meta">
-                            <a data-barba href="impressum.html">Impressum</a>
+                            <a data-barba href="impressum.html">Legal Notice</a>
                           </li>
 						<li class="navList-item--meta">
-                            <a data-barba href="datenschutz.html">Datenschutz</a>
+                            <a data-barba href="datenschutz.html">Privacy Policy</a>
                           </li>
                         </ul>
-					  
+
                   </div>
                 </div>
 
@@ -180,19 +186,19 @@
                   <div class="nav__info">
                     <div class="nav__info__item js-navInfo-item">
                       <h5 class="text-sm tracking-none fw-500">
-                        Addresse
+                        Address
                       </h5>
 
                       <div class="nav__info__content text-lg text-white mt-16">
                         <p>
-                          Christian Epping <br>Kolpingstraße 7<br> 48629 Metelen
+                          Christian Epping <br>Kolpingstraße 7<br> 48629 Metelen, Germany
                         </p>
                       </div>
                     </div>
 
                     <div class="nav__info__item js-navInfo-item">
                       <h5 class="text-sm tracking-none fw-500">
-                        Plattformen
+                        Elsewhere
                       </h5>
 
                       <div class="nav__info__content text-lg text-white mt-16">
@@ -203,7 +209,7 @@
 
                     <div class="nav__info__item js-navInfo-item">
                       <h5 class="text-sm tracking-none fw-500">
-                        Kontakt
+                        Contact
                       </h5>
 
                       <div class="nav__info__content text-lg text-white mt-16">
@@ -231,33 +237,33 @@
             <div class="col-lg-5 col-md-8">
               <div data-anim-child="slide-up">
                 <p class="text-sm uppercase tracking-md text-light mb-16">
-                  Christian Epping — Senior UX/UI Designer mit Design-Leadership
+                  Christian Epping — Senior UX/UI Designer with Design Leadership Experience
                 </p>
               </div>
 
               <div data-anim-child="slide-up delay-1" class="sectionHeading -md">
                 <h1 class="sectionHeading__title">
-                  Design-Leadership für komplexe B2B-Produkte.
+                  Design leadership for complex B2B products.
                 </h1>
               </div>
 
               <div data-anim-child="slide-up delay-2">
                 <p class="text-lg leading-5xl mt-24">
-                  Über 6 Jahre fokussierte UX/UI-Design- und
-                  Design-Leadership-Erfahrung – eingebettet in 20+ Jahre
-                  Berufserfahrung quer durch Wirtschaft, Medien und Gestaltung.
+                  6+ years of focused UX/UI design and design leadership
+                  experience, built on 20+ years across business, media, and
+                  design.
                 </p>
               </div>
 
               <div data-anim-child="slide-up delay-3" class="row x-gap-16 y-gap-16 mt-32 hero-cta-row">
                 <div class="col-auto">
-                  <a data-barba href="index.html#ausgewaehlte-arbeiten" class="button -md -black text-white">
-                    Ausgewählte Arbeiten
+                  <a data-barba href="index.html#selected-work" class="button -md -black text-white">
+                    Selected Work
                   </a>
                 </div>
                 <div class="col-auto">
-                  <a href="files/Lebenslauf-Christian-Epping.pdf" download="Lebenslauf-Christian-Epping.pdf" class="button -md -outline-black text-black">
-                    Lebenslauf (PDF)
+                  <a href="../files/Lebenslauf-Christian-Epping.pdf" download="Lebenslauf-Christian-Epping.pdf" class="button -md -outline-black text-black">
+                    Download CV (PDF)
                   </a>
                 </div>
               </div>
@@ -266,7 +272,7 @@
             <div class="col-lg-6 offset-lg-1 md:mt-56">
               <div data-anim-child="img-right cover-white delay-6">
                 <div data-parallax="0.7" class="h-100vh md:h-70vh">
-                  <div data-parallax-target class="bg-image js-lazy" data-bg="img/backgrounds/2.jpg"></div>
+                  <div data-parallax-target class="bg-image js-lazy" data-bg="../img/backgrounds/2.jpg"></div>
                 </div>
               </div>
             </div>
@@ -276,60 +282,60 @@
         <!-- container end -->
       </section>
       <!-- page header end -->
-		
-      <!-- Einleitung start -->
+
+      <!-- Introduction start -->
       <section class="layout-pt-lg layout-pb-md">
         <div class="container">
           <div class="row justify-content-center">
             <div class="col-xl-8 col-lg-9">
               <p class="text-2xl case-study-lead">
-                Ich gestalte komplexe digitale Produkte – und ich führe die
-                Teams und Prozesse, die sie entstehen lassen. Was mein Profil
-                ungewöhnlich macht, ist die Kombination dreier Perspektiven,
-                die selten zusammenkommen: ein Studium zum Staatlich geprüften
-                Betriebswirt (Absatzwirtschaft/Marketing), eine Ausbildung zum
-                Mediengestalter Digital und Print und mehrjährige Erfahrung
-                als Senior UX/UI Designer mit fachlicher Teamführung. Ideen
-                prototype ich bei Bedarf direkt im Code. So denke ich
-                Produkte gleichzeitig aus Geschäfts-, Nutzer- und
-                Umsetzungssicht – und übersetze zwischen Business, Design und
-                Engineering.
+                I design complex digital products — and I lead the teams and
+                processes that bring them to life. What makes my profile
+                unusual is a combination of three perspectives that rarely
+                come together: a degree as a state-certified business
+                economist (marketing & sales), training as a digital and
+                print media designer, and several years as a Senior UX/UI
+                Designer with team leadership responsibility. When it helps,
+                I prototype ideas directly in code. That lets me think about
+                products from a business, user, and implementation
+                perspective at once — and translate between business,
+                design, and engineering.
               </p>
             </div>
           </div>
         </div>
       </section>
-      <!-- Einleitung end -->
+      <!-- Introduction end -->
 
 
-      <!-- Führung & Verantwortung start -->
+      <!-- Leadership & Ownership start -->
       <section class="layout-pt-sm layout-pb-lg">
         <div class="container">
           <div class="row justify-content-center">
             <div class="col-xl-8 col-lg-9">
               <h2 class="text-3xl fw-600">
-                Führung & Verantwortung
+                Leadership & Ownership
               </h2>
               <div class="impact-statement">
                 <p>
-                  „Führung ist für mich Teil meiner Rolle, kein Zusatz. Über
-                  mehrere Jahre habe ich die fachliche Führung eines
-                  Designteams verantwortet – inklusive Qualitätssicherung und
-                  Steuerung paralleler Projekte. Schon davor trug ich als
-                  Einkaufsleiter Budget- und Verhandlungsverantwortung. Diese
-                  Mischung aus gestalterischer Leitung und
-                  betriebswirtschaftlichem Denken prägt, wie ich arbeite:
-                  strukturiert und im engen Austausch mit allen Beteiligten."
+                  "Leadership is part of my role, not an add-on. For several
+                  years I was responsible for the professional leadership of
+                  a design team — including quality assurance and running
+                  parallel projects. Before that, as a procurement manager,
+                  I carried budget and negotiation responsibility. That
+                  combination of creative leadership and business thinking
+                  shapes how I work: structured, and in close exchange with
+                  everyone involved."
                 </p>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <!-- Führung & Verantwortung end -->
+      <!-- Leadership & Ownership end -->
 
 
-      <!-- Kompetenzfelder start -->
+      <!-- Areas of Expertise start -->
       <section class="layout-pt-md layout-pb-md">
         <!-- container start -->
         <div class="container">
@@ -339,10 +345,10 @@
             <div class="col-xl-6 col-lg-8 col-md-10">
               <div class="sectionHeading -lg">
                 <p class="sectionHeading__subtitle">
-                  Kompetenzfelder
+                  Areas of Expertise
                 </p>
                 <h2 class="sectionHeading__title">
-                  Vier Felder, eine Handschrift
+                  Four disciplines, one signature
                 </h2>
               </div>
             </div>
@@ -363,12 +369,13 @@
                   </div>
 
                   <h3 class="serviceCard__title text-2xl fw-500 tacking-none mt-32">
-                    Design-Leadership & Zusammenarbeit
+                    Design Leadership & Collaboration
                   </h3>
 
                   <p class="serviceCard__text mt-16">
-                    Fachliche Teamführung, Qualitätssicherung, Mentoring,
-                    Stakeholder-Management, enge Abstimmung mit Entwicklung.
+                    Team leadership, quality assurance, mentoring,
+                    stakeholder management, close collaboration with
+                    engineering.
                   </p>
                 </div>
               </div>
@@ -384,13 +391,12 @@
                   </div>
 
                   <h3 class="serviceCard__title text-2xl fw-500 tacking-none mt-32">
-                    Produkt & Strategie
+                    Product & Strategy
                   </h3>
 
                   <p class="serviceCard__text mt-16">
-                    Product Discovery, strategische UX-Beratung,
-                    betriebswirtschaftlicher und Marketing-Blick, Ausrichtung
-                    an Geschäftszielen.
+                    Product discovery, strategic UX consulting, a commercial
+                    and marketing lens, alignment with business goals.
                   </p>
                 </div>
               </div>
@@ -406,13 +412,13 @@
                   </div>
 
                   <h3 class="serviceCard__title text-2xl fw-500 tacking-none mt-32">
-                    Design-Systeme & Craft
+                    Design Systems & Craft
                   </h3>
 
                   <p class="serviceCard__text mt-16">
-                    Aufbau kundenspezifischer Designsysteme, Arbeit in
-                    bestehenden Systemen, UX/UI, Prototyping (inkl. Code),
-                    digitale Barrierefreiheit.
+                    Building client-specific design systems, working within
+                    existing ones, UX/UI, prototyping (including code),
+                    digital accessibility.
                   </p>
                 </div>
               </div>
@@ -428,12 +434,13 @@
                   </div>
 
                   <h3 class="serviceCard__title text-2xl fw-500 tacking-none mt-32">
-                    Prozess & Umsetzung
+                    Process & Delivery
                   </h3>
 
                   <p class="serviceCard__text mt-16">
-                    Agile Zusammenarbeit (SCRUM, JIRA), saubere Übergabe an
-                    Entwicklung, Qualitätssicherung und Testing vor Go-Live.
+                    Agile collaboration (Scrum, Jira), clean handoff to
+                    engineering, quality assurance and testing before
+                    go-live.
                   </p>
                 </div>
               </div>
@@ -446,13 +453,13 @@
           <div class="row layout-pt-md">
             <div class="col-xl-6 col-lg-8 col-md-10">
               <p class="text-base text-light">
-                Tools: FIGMA, FigJam, Adobe Creative Suite, JIRA/Atlassian,
+                Tools: Figma, FigJam, Adobe Creative Suite, Jira/Atlassian,
                 Trello, Azure DevOps, Claude, Claude Code, Claude Design,
                 ChatGPT, Gemini, Cursor.
               </p>
               <p class="text-base text-light mt-8">
-                Sprachen: Deutsch (Muttersprache), Englisch
-                (Businessniveau), Spanisch (Grundkenntnisse).
+                Languages: German (native), English (business fluent),
+                Spanish (basic).
               </p>
             </div>
           </div>
@@ -461,17 +468,17 @@
         </div>
         <!-- container end -->
       </section>
-      <!-- Kompetenzfelder end -->
+      <!-- Areas of Expertise end -->
 
 
-      <!-- Beruflicher Werdegang start -->
+      <!-- Career start -->
       <section class="layout-pt-md layout-pb-md">
         <div class="container">
           <div class="row justify-content-center">
             <div class="col-xl-8 col-lg-9">
               <div class="sectionHeading -lg">
                 <p class="sectionHeading__subtitle">
-                  Beruflicher Werdegang
+                  Career
                 </p>
               </div>
             </div>
@@ -486,7 +493,7 @@
                   <p class="text-base text-light mt-4">JustRelate Group, Berlin</p>
                 </div>
                 <div class="col-auto">
-                  <p class="text-base text-light">seit 2025</p>
+                  <p class="text-base text-light">since 2025</p>
                 </div>
               </div>
 
@@ -503,7 +510,7 @@
               <div class="werdegang-item row justify-content-between align-items-baseline x-gap-16">
                 <div class="col-auto">
                   <h4 class="text-xl fw-600">Senior UX/UI Designer</h4>
-                  <p class="text-base text-light mt-4">connectiv! eSolutions, Lingen — fachliche Führung des Designteams</p>
+                  <p class="text-base text-light mt-4">connectiv! eSolutions, Lingen — professional leadership of the design team</p>
                 </div>
                 <div class="col-auto">
                   <p class="text-base text-light">2019–2024</p>
@@ -512,7 +519,7 @@
 
               <div class="werdegang-item row justify-content-between align-items-baseline x-gap-16">
                 <div class="col-auto">
-                  <h4 class="text-xl fw-600">Mediengestalter Digital und Print (Ausbildung)</h4>
+                  <h4 class="text-xl fw-600">Digital & Print Media Designer (Apprenticeship)</h4>
                   <p class="text-base text-light mt-4">connectiv! eSolutions</p>
                 </div>
                 <div class="col-auto">
@@ -522,11 +529,11 @@
 
               <div class="werdegang-item row justify-content-between align-items-baseline x-gap-16">
                 <div class="col-auto">
-                  <h4 class="text-xl fw-600">Davor</h4>
-                  <p class="text-base text-light mt-4">Kaufmännischer Werdegang bis zum Einkaufsleiter, freier Journalist, freiberuflicher Fotograf</p>
+                  <h4 class="text-xl fw-600">Before that</h4>
+                  <p class="text-base text-light mt-4">Commercial career up to procurement manager, freelance journalist, freelance photographer</p>
                 </div>
                 <div class="col-auto">
-                  <p class="text-base text-light">seit 2015</p>
+                  <p class="text-base text-light">since 2015</p>
                 </div>
               </div>
 
@@ -534,17 +541,17 @@
           </div>
         </div>
       </section>
-      <!-- Beruflicher Werdegang end -->
+      <!-- Career end -->
 
 
-      <!-- Ausbildungen & Zertifikate start -->
+      <!-- Education & Certificates start -->
       <section class="layout-pt-md layout-pb-lg">
         <div class="container">
           <div class="row justify-content-center">
             <div class="col-xl-8 col-lg-9">
               <div class="sectionHeading -lg">
                 <p class="sectionHeading__subtitle">
-                  Ausbildungen & Zertifikate
+                  Education & Certificates
                 </p>
               </div>
             </div>
@@ -554,31 +561,27 @@
             <div class="col-xl-8 col-lg-9">
 
               <div class="werdegang-item">
-                <h4 class="text-xl fw-600">Staatl. geprüfter Betriebswirt</h4>
-                <p class="text-base text-light mt-4">Fachrichtung Absatzwirtschaft/Marketing</p>
+                <h4 class="text-xl fw-600">State-Certified Business Economist</h4>
+                <p class="text-base text-light mt-4">Marketing & Sales</p>
               </div>
 
               <div class="werdegang-item">
-                <h4 class="text-xl fw-600">Mediengestalter Digital und Print</h4>
-                <p class="text-base text-light mt-4">Gestaltung u. Technik</p>
+                <h4 class="text-xl fw-600">Digital & Print Media Designer</h4>
+                <p class="text-base text-light mt-4">Design & Technology</p>
               </div>
 
               <div class="werdegang-item">
-                <h4 class="text-xl fw-600">Zertifikat Digitale Barrierefreiheit</h4>
-                <p class="text-base text-light mt-4">2024 — relevant im Kontext des European Accessibility Act</p>
+                <h4 class="text-xl fw-600">Digital Accessibility Certificate</h4>
+                <p class="text-base text-light mt-4">2024 — relevant in the context of the European Accessibility Act</p>
               </div>
 
             </div>
           </div>
         </div>
       </section>
-      <!-- Ausbildungen & Zertifikate end -->
-		
-		
-		
-		
-		
-		
+      <!-- Education & Certificates end -->
+
+
       <!-- section start -->
       <section class="layout-pt-md layout-pb-md">
         <!-- container start -->
@@ -589,7 +592,7 @@
             <div class="col-lg-6 z-1">
               <div data-anim-child="img-right cover-white delay-1">
                 <div class="ratio ratio-1:1" data-parallax="0.7">
-                  <img data-parallax-target class="js-lazy" src="#" data-src="img/backgrounds/8.jpg" alt="Back image">
+                  <img data-parallax-target class="js-lazy" src="#" data-src="../img/backgrounds/8.jpg" alt="Back image">
                 </div>
               </div>
             </div>
@@ -599,24 +602,24 @@
               <div class="sectionHeading -xl md:container pt-16">
                 <div data-anim-child="slide-up delay-8">
                   <p class="sectionHeading__subtitle">
-                    Persönliche Note
+                    Off the Clock
                   </p>
                 </div>
                 <div data-anim-child="slide-up delay-9" class="ml-minus-col-1 lg:ml-minus-lg mr-minus-col-2 md:ml-0 md:mr-0">
                   <h2 class="sectionHeading__title mt-48 md:mt-24">
-                    Segeln &<br>
-                    Schlagzeug
+                    Sailing &<br>
+                    Drums
                   </h2>
                 </div>
                 <div data-anim-child="slide-up delay-10">
                   <p class="mt-56 lg:mt-40 md:mt-20">
-                    Abseits des Bildschirms findet man mich am Schlagzeug oder
-                    auf dem Wasser. Beides hat mehr mit meiner Arbeit zu tun,
-                    als man denkt: Schlagzeug ist Timing und Zusammenspiel,
-                    Segeln ist vorausdenken, ruhig bleiben, wenn es böig wird,
-                    und mit dem arbeiten, was der Wind gerade gibt. Genau
-                    diese Mischung aus Struktur und Gelassenheit nehme ich mit
-                    an den Schreibtisch.
+                    Away from the screen, you'll find me behind a drum kit or
+                    out on the water. Both have more to do with my work than
+                    you'd think: drumming is timing and interplay; sailing is
+                    thinking ahead, staying calm when it gets gusty, and
+                    working with whatever wind you're actually given. That
+                    same mix of structure and composure is what I bring to
+                    the desk.
                   </p>
                 </div>
               </div>
@@ -638,19 +641,19 @@
             <div class="row y-gap-48 justify-content-between">
               <div class="col-lg-auto col-sm-12">
                 <a href="index.html" class="footer__logo text-white">
-                  <img class="js-lazy" src="#" data-src="img/logo/logo-light.svg" alt="Logo">
+                  <img class="js-lazy" src="#" data-src="../img/logo/logo-light.svg" alt="Logo">
                 </a>
               </div>
 
               <div class="col-lg-3 col-sm-6">
                 <h4 class="text-xl fw-500 text-white">
-                  Kontakt
+                  Contact
                 </h4>
 
                 <div class="footer__content text-base text-light mt-16 sm:mt-12">
-                  <p>Kolpingstraße 7, 48629 Metelen</p>
-                  <p class="mt-8"><a href="mailto:info@christian-epping.com">info@christian-epping.com</a></p> 
-                  <p class="mt-8"><a href="tel:01705508124">+49 170 55 08 124</a></p> 
+                  <p>Kolpingstraße 7, 48629 Metelen, Germany</p>
+                  <p class="mt-8"><a href="mailto:info@christian-epping.com">info@christian-epping.com</a></p>
+                  <p class="mt-8"><a href="tel:01705508124">+49 170 55 08 124</a></p>
                 </div>
               </div>
 
@@ -660,15 +663,15 @@
                 </h4>
 
                 <div class="footer__content text-base text-light mt-16 sm:mt-12">
-                   <div><a data-barba href="ueber.html" class="button -underline mt-4">Über mich</a></div>
-				   <div><a data-barba href="impressum.html" class="button -underline mt-4">Impressum</a></div>
-				   <div><a data-barba href="datenschutz.html" class="button -underline mt-4">Datenschutz</a></div>
+                   <div><a data-barba href="ueber.html" class="button -underline mt-4">About</a></div>
+				   <div><a data-barba href="impressum.html" class="button -underline mt-4">Legal Notice</a></div>
+				   <div><a data-barba href="datenschutz.html" class="button -underline mt-4">Privacy Policy</a></div>
                 </div>
               </div>
 
               <div class="col-lg-auto col-auto">
                 <h4 class="text-xl fw-500 text-white">
-                  Plattformen
+                  Elsewhere
                 </h4>
 
                 <div class="social -bordered mt-16 sm:mt-12">
@@ -712,8 +715,8 @@
 
 
   <!-- JavaScript -->
-  <script src="js/vendors.js"></script>
-  <script src="js/main.js"></script>
+  <script src="../js/vendors.js"></script>
+  <script src="../js/main.js"></script>
 
 </body>
 

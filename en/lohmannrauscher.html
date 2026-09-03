@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 
 <head>
 
@@ -8,30 +8,35 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- Stylesheets -->
-  <link rel="stylesheet" href="css/vendors.css">
-  <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="../css/vendors.css">
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/style.css">
 
   <!-- Favicon -->
-  <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
-  <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
-  <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png">
-  <link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-icon-76x76.png">
-  <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-icon-114x114.png">
-  <link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-icon-120x120.png">
-  <link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-icon-144x144.png">
-  <link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-icon-152x152.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
-  <link rel="icon" type="image/png" sizes="192x192" href="img/favicon/android-icon-192x192.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
-  <link rel="manifest" href="img/favicon/manifest.json">
+  <link rel="apple-touch-icon" sizes="57x57" href="../img/favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="../img/favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="../img/favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="../img/favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="../img/favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="../img/favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="../img/favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="../img/favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../img/favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="../img/favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="../img/favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon/favicon-16x16.png">
+  <link rel="manifest" href="../img/favicon/manifest.json">
   <meta name="msapplication-TileColor" content="#ffffff">
-  <meta name="msapplication-TileImage" content="img/favicon/ms-icon-144x144.png">
+  <meta name="msapplication-TileImage" content="../img/favicon/ms-icon-144x144.png">
   <meta name="theme-color" content="#ffffff">
 
-  <title>Christian Epping</title>
+  <!-- Language versions -->
+  <link rel="alternate" hreflang="de" href="https://christian-epping.com/de/lohmannrauscher.html">
+  <link rel="alternate" hreflang="en" href="https://christian-epping.com/en/lohmannrauscher.html">
+  <link rel="alternate" hreflang="x-default" href="https://christian-epping.com/">
+
+  <title>Christian Epping — Lohmann & Rauscher</title>
 </head>
 
 <body class="preloader-visible" data-barba="wrapper">
@@ -43,7 +48,7 @@
 
     <div class="preloader__progress">
       <div class="preloader__progress__inner"></div>
-      <img src="img/general/loader.svg" alt="preloader image" class="preloader__img">
+      <img src="../img/general/loader.svg" alt="preloader image" class="preloader__img">
     </div>
   </div>
   <!-- preloader end -->
@@ -82,14 +87,15 @@
         <div class="header__bar">
           <div class="header__logo js-header-logo">
             <a data-barba href="index.html">
-              <img class="header__logo__light js-lazy" src="#" data-src="img/logo/logo-light.svg" alt="Logo">
+              <img class="header__logo__light js-lazy" src="#" data-src="../img/logo/logo-light.svg" alt="Logo">
             </a>
             <a data-barba href="index.html">
-              <img class="header__logo__dark js-lazy" src="#" data-src="img/logo/logo-dark.svg" alt="Logo">
+              <img class="header__logo__dark js-lazy" src="#" data-src="../img/logo/logo-dark.svg" alt="Logo">
             </a>
           </div>
 
           <div class="header__menu js-header-menu">
+            <a data-barba href="../de/lohmannrauscher.html" class="header__lang">DE</a>
             <button type="button" class="nav-button-open js-nav-open">
               <i class="icon" data-feather="menu"></i>
               <span></span>
@@ -122,7 +128,7 @@
                     <ul class="navList js-navList">
 
 						<li class="menu-item-has-children">
-                        <a>Arbeiten</a>
+                        <a>Work</a>
 
                         <ul class="subnav-list">
                           <li>
@@ -136,40 +142,40 @@
                           </li>
 
                           <li class="subnav-item--secondary">
-                            <a data-barba href="provita.html">Provita Medical</a>
+                            <a href="../de/provita.html">Provita Medical</a>
                           </li>
                           <li class="subnav-item--secondary">
-                            <a data-barba href="lumifai.html">LUMIFAI</a>
+                            <a href="../de/lumifai.html">LUMIFAI</a>
                           </li>
                           <li class="subnav-item--secondary">
-                            <a data-barba href="e2_pcs.html">e² project cloud systems</a>
+                            <a href="../de/e2_pcs.html">e² project cloud systems</a>
                           </li>
                           <li class="subnav-item--secondary">
-                            <a data-barba href="garagenkonfigurator.html">Rekers Betonwerk</a>
+                            <a href="../de/garagenkonfigurator.html">Rekers Betonwerk</a>
                           </li>
                           <li class="subnav-item--secondary">
-                            <a data-barba href="puresleben.html">Pures Leben</a>
+                            <a href="../de/puresleben.html">Pures Leben</a>
                           </li>
                           <li class="subnav-item--secondary">
-                            <a data-barba href="leistenschneider.html">Foto Leistenschneider</a>
+                            <a href="../de/leistenschneider.html">Foto Leistenschneider</a>
                           </li>
                           <li class="subnav-item--secondary">
-                            <a data-barba href="wilbers.html">Wilbers Suspension</a>
+                            <a href="../de/wilbers.html">Wilbers Suspension</a>
                           </li>
                           <li class="subnav-item--secondary">
-                            <a data-barba href="kibek.html">Teppich Kibek</a>
+                            <a href="../de/kibek.html">Teppich Kibek</a>
                           </li>
                         </ul>
                       </li>
 
                           <li>
-                            <a data-barba href="ueber.html">Über mich</a>
+                            <a data-barba href="ueber.html">About</a>
                           </li>
                           <li class="navList-item--meta">
-                            <a data-barba href="impressum.html">Impressum</a>
+                            <a data-barba href="impressum.html">Legal Notice</a>
                           </li>
 						<li class="navList-item--meta">
-                            <a data-barba href="datenschutz.html">Datenschutz</a>
+                            <a data-barba href="datenschutz.html">Privacy Policy</a>
                           </li>
                         </ul>
 
@@ -180,19 +186,19 @@
                   <div class="nav__info">
                     <div class="nav__info__item js-navInfo-item">
                       <h5 class="text-sm tracking-none fw-500">
-                        Addresse
+                        Address
                       </h5>
 
                       <div class="nav__info__content text-lg text-white mt-16">
                         <p>
-                          Christian Epping <br>Kolpingstraße 7<br> 48629 Metelen
+                          Christian Epping <br>Kolpingstraße 7<br> 48629 Metelen, Germany
                         </p>
                       </div>
                     </div>
 
                     <div class="nav__info__item js-navInfo-item">
                       <h5 class="text-sm tracking-none fw-500">
-                        Plattformen
+                        Elsewhere
                       </h5>
 
                       <div class="nav__info__content text-lg text-white mt-16">
@@ -203,7 +209,7 @@
 
                     <div class="nav__info__item js-navInfo-item">
                       <h5 class="text-sm tracking-none fw-500">
-                        Kontakt
+                        Contact
                       </h5>
 
                       <div class="nav__info__content text-lg text-white mt-16">
@@ -226,7 +232,7 @@
       <!-- page header start -->
       <section class="masthead -type-work-1 -full-screen bg-black sm:text-center js-masthead-type-work-1 js-bg">
         <div data-parallax="0.7" class="masthead__bg overlay-black-md js-image">
-          <div data-parallax-target class="bg-image js-lazy js-bg-item" data-bg="img/projects/horizontal/15.png"></div>
+          <div data-parallax-target class="bg-image js-lazy js-bg-item" data-bg="../img/projects/horizontal/15.png"></div>
         </div>
 
         <div class="masthead__content">
@@ -235,7 +241,7 @@
               <div class="col-xl-10 col-sm-10 z-3">
                 <div data-split="lines">
                   <p class="masthead__subtitle text-lg sm:text-base text-white mb-32 sm:mb-24 js-subtitle">
-                    UX/UI-Design
+                    UX/UI Design
                   </p>
                 </div>
 
@@ -251,8 +257,8 @@
                     <div class="col-lg-auto  col-sm-6">
                       <div class="masthead__info">
                         <div data-split="lines" class="masthead__item js-info-item">
-                          <h5 class="text-lg leading-sm fw-600 text-white">Rolle</h5>
-                          <p class="text-lg leading-sm text-light mt-12 sm:mt-8">Senior UX/UI-Designer</p>
+                          <h5 class="text-lg leading-sm fw-600 text-white">Role</h5>
+                          <p class="text-lg leading-sm text-light mt-12 sm:mt-8">Senior UX/UI Designer</p>
                         </div>
                       </div>
                     </div>
@@ -260,8 +266,8 @@
                     <div class="col-lg-auto offset-lg-1 col-sm-6">
                       <div class="masthead__info">
                         <div data-split="lines" class="masthead__item js-info-item">
-                          <h5 class="text-lg leading-sm fw-600 text-white">Zeitraum</h5>
-                          <p class="text-lg leading-sm text-light mt-12 sm:mt-8">seit 05|2022, laufend</p>
+                          <h5 class="text-lg leading-sm fw-600 text-white">Timeline</h5>
+                          <p class="text-lg leading-sm text-light mt-12 sm:mt-8">Since 05/2022, ongoing</p>
                         </div>
                       </div>
                     </div>
@@ -269,8 +275,8 @@
                     <div class="col-lg-auto offset-lg-1 col-sm-6">
                       <div class="masthead__info">
                         <div data-split="lines" class="masthead__item js-info-item">
-                          <h5 class="text-lg leading-sm fw-600 text-white">Branche</h5>
-                          <p class="text-lg leading-sm text-light mt-12 sm:mt-8">Medizin- & Gesundheitsprodukte, international</p>
+                          <h5 class="text-lg leading-sm fw-600 text-white">Industry</h5>
+                          <p class="text-lg leading-sm text-light mt-12 sm:mt-8">Medical & healthcare products, international</p>
                         </div>
                       </div>
                     </div>
@@ -285,28 +291,27 @@
       <!-- page header end -->
 
 
-      <!-- intro / Geschäftswert start -->
+      <!-- intro / business value start -->
       <section class="layout-pt-lg layout-pb-md">
         <div class="container">
           <div class="row justify-content-center">
             <div class="col-xl-8 col-lg-9">
               <p class="text-2xl case-study-lead">
-                Über die B2B-Plattform von Lohmann & Rauscher laufen rund
-                <strong class="fw-600">200 Mio. € Umsatz pro Jahr</strong> – etwa ein
-                Viertel des Gruppenumsatzes von ca. 800 Mio. €. Sie ist kein
-                Marketing-Kanal, sondern zentrale Vertriebsinfrastruktur. Seit 2022
-                verantworte ich UX und UI dieser Plattform und entwickle sie
-                fortlaufend weiter – in Abstimmung mit dem internationalen
-                Marketing- und Designteam.
+                Lohmann & Rauscher's B2B platform carries around
+                <strong class="fw-600">€200M in revenue per year</strong> — roughly a
+                quarter of the group's total revenue of about €800M. It isn't a
+                marketing channel; it's core sales infrastructure. Since 2022 I've
+                owned UX and UI for this platform and kept developing it, working
+                closely with the international marketing and design team.
               </p>
             </div>
           </div>
         </div>
       </section>
-      <!-- intro / Geschäftswert end -->
+      <!-- intro / business value end -->
 
 
-      <!-- Kontext- & Zahlenblock start -->
+      <!-- context & numbers start -->
       <section class="layout-pb-sm">
         <div class="container">
           <div class="row justify-content-center">
@@ -314,33 +319,33 @@
               <div class="row y-gap-40">
 
                 <div class="col-sm-6">
-                  <div class="stat__figure number -sm">60.000</div>
-                  <p class="stat__label text-base text-light mt-12">Produkte & Dienstleistungen im Sortiment</p>
+                  <div class="stat__figure number -sm">60,000</div>
+                  <p class="stat__label text-base text-light mt-12">Products and services in the catalog</p>
                 </div>
 
                 <div class="col-sm-6">
-                  <div class="stat__figure number -sm">~200 Mio. €</div>
-                  <p class="stat__label text-base text-light mt-12">Jahresumsatz über die Plattform</p>
+                  <div class="stat__figure number -sm">~€200M</div>
+                  <p class="stat__label text-base text-light mt-12">Annual revenue through the platform</p>
                 </div>
 
                 <div class="col-sm-6">
-                  <div class="stat__figure number -sm">6.300</div>
-                  <p class="stat__label text-base text-light mt-12">Mitarbeitende weltweit</p>
+                  <div class="stat__figure number -sm">6,300</div>
+                  <p class="stat__label text-base text-light mt-12">Employees worldwide</p>
                 </div>
 
                 <div class="col-sm-6">
                   <div class="stat__figure number -sm">18</div>
-                  <p class="stat__label text-base text-light mt-12">Produktionsstandorte in 13 Ländern</p>
+                  <p class="stat__label text-base text-light mt-12">Production sites across 13 countries</p>
                 </div>
 
                 <div class="col-sm-6">
-                  <div class="stat__figure number -sm">8.000+</div>
-                  <p class="stat__label text-base text-light mt-12">Partner weltweit</p>
+                  <div class="stat__figure number -sm">8,000+</div>
+                  <p class="stat__label text-base text-light mt-12">Partners worldwide</p>
                 </div>
 
                 <div class="col-sm-6">
                   <div class="stat__figure number -sm">13</div>
-                  <p class="stat__label text-base text-light mt-12">Länder mit aktivem Shop-Betrieb</p>
+                  <p class="stat__label text-base text-light mt-12">Countries with active shop operations</p>
                 </div>
 
               </div>
@@ -348,35 +353,36 @@
           </div>
         </div>
       </section>
-      <!-- Kontext- & Zahlenblock end -->
+      <!-- context & numbers end -->
 
 
-      <!-- Ausgangslage start -->
+      <!-- Starting Point start -->
       <section class="layout-pt-sm layout-pb-lg">
         <div class="container">
           <div class="row justify-content-center">
             <div class="col-xl-8 col-lg-9">
               <h2 class="text-3xl fw-600">
-                Ausgangslage
+                Starting Point
               </h2>
               <p class="text-lg text-black mt-24 sm:mt-16">
-                Ein über Jahre gewachsenes B2B-Portal mit rund 60.000 Positionen war
-                seiner Rolle als zentraler Vertriebskanal nicht mehr gewachsen. Ein
-                relevanter Teil der Bestellungen lief noch analog über Fax.
+                A B2B portal that had grown over years, carrying around 60,000
+                line items, could no longer carry its weight as the company's
+                central sales channel. A meaningful share of orders still came in
+                by fax.
               </p>
               <p class="leading-5xl mt-24 sm:mt-16">
-                Eine brauchbare mobile Nutzung existierte nicht, obwohl Partner und
-                Außendienst zunehmend auf Tablet und Smartphone arbeiteten. Die
-                Navigation durch ein Sortiment dieser Größe war mühsam, und der
-                Markenauftritt war über die verschiedenen Ländermärkte hinweg
-                uneinheitlich. Der Standard-Checkout des OXID-Systems bildete die
-                spezifischen Anforderungen des B2B-Geschäfts nur unzureichend ab.
+                There was no usable mobile experience, even though partners and
+                field sales were increasingly working from tablets and phones.
+                Navigating a catalog of this size was tedious, and the brand
+                presentation was inconsistent across the different country
+                markets. OXID's standard checkout only partially reflected the
+                realities of B2B ordering.
               </p>
             </div>
           </div>
         </div>
       </section>
-      <!-- Ausgangslage end -->
+      <!-- Starting Point end -->
 
 
       <!-- image break start -->
@@ -384,13 +390,13 @@
         <div class="row no-gutters">
           <div class="col-md-6">
             <div data-parallax="0.5" class="ratio ratio-1:1">
-              <div data-parallax-target class="bg-image js-lazy" data-bg="img/project15/square-1.png"></div>
+              <div data-parallax-target class="bg-image js-lazy" data-bg="../img/project15/square-1.png"></div>
             </div>
           </div>
 
           <div class="col-md-6">
             <div data-parallax="0.5" class="ratio ratio-1:1">
-              <div data-parallax-target class="bg-image js-lazy" data-bg="img/project15/square-2.png"></div>
+              <div data-parallax-target class="bg-image js-lazy" data-bg="../img/project15/square-2.png"></div>
             </div>
           </div>
         </div>
@@ -398,45 +404,42 @@
       <!-- image break end -->
 
 
-      <!-- Vorgehen & Entscheidungen start -->
+      <!-- Approach & Decisions start -->
       <section class="layout-pt-lg layout-pb-lg">
         <div class="container">
           <div class="row justify-content-center">
             <div class="col-xl-8 col-lg-9">
               <h2 class="text-3xl fw-600">
-                Vorgehen & Entscheidungen
+                Approach & Decisions
               </h2>
               <p class="text-lg text-black mt-24 sm:mt-16">
-                Statt eines reinen optischen Rebrushs habe ich die Plattform als
-                Produkt gedacht, das über Jahre und über Ländergrenzen hinweg
-                tragfähig sein muss.
+                Rather than a cosmetic refresh, I approached the platform as a
+                product that had to hold up over years and across borders.
               </p>
               <p class="leading-5xl mt-24 sm:mt-16">
-                Den Kern bildete ein neues, responsiv gedachtes Informations- und
-                Navigationskonzept für ein Sortiment von 60.000 Positionen – mit dem
-                Fokus auf Filterung und Exploration, damit B2B-Kunden das für sie
-                relevante Produkt schnell finden. Parallel habe ich eine eigene
-                UI-Komponenten-Bibliothek aufgebaut: die Grundlage für einen
-                konsistenten, wartbaren und international skalierbaren Auftritt statt
-                einzelner Insellösungen.
+                At the core was a new, responsive information and navigation
+                concept built for a 60,000-item catalog — focused on filtering
+                and exploration so B2B customers can find what's relevant to
+                them quickly. Alongside that, I built a dedicated UI component
+                library: the foundation for a consistent, maintainable,
+                internationally scalable presence instead of one-off solutions.
               </p>
               <p class="leading-5xl mt-24 sm:mt-16">
-                Den Markenauftritt habe ich eng mit dem internationalen Marketing-
-                und Designteam abgestimmt, einschließlich der Abstimmung mit dem
-                Design Lead in den USA – so entstand ein einheitliches
-                Erscheinungsbild über die aktiven Ländermärkte hinweg. Den
-                Standard-Checkout von OXID habe ich verschlankt und auf die realen
-                B2B-Abläufe zugeschnitten. Ergänzend wurde ein Konfigurator für
-                komplexe medizinische Sonderanfertigungen (u. a.
-                Kompressionsmaterialien) in das einheitliche Shop-Erlebnis
-                integriert. Alle Konzepte wurden iterativ in Workshops mit dem Kunden
-                und ausgewählten Nutzern verfeinert.
+                I aligned the brand presentation closely with the international
+                marketing and design team, including the design lead in the
+                US, resulting in a consistent look across the active country
+                markets. I stripped down OXID's standard checkout and rebuilt
+                it around real B2B workflows. On top of that, a configurator
+                for complex medical custom orders (including compression
+                materials) was integrated into the unified shop experience. All
+                concepts were refined iteratively in workshops with the client
+                and selected users.
               </p>
             </div>
           </div>
         </div>
       </section>
-      <!-- Vorgehen & Entscheidungen end -->
+      <!-- Approach & Decisions end -->
 
 
       <!-- image break start -->
@@ -444,13 +447,13 @@
         <div class="row no-gutters">
           <div class="col-md-6">
             <div data-parallax="0.5" class="ratio ratio-1:1">
-              <div data-parallax-target class="bg-image js-lazy" data-bg="img/project15/square-3.png"></div>
+              <div data-parallax-target class="bg-image js-lazy" data-bg="../img/project15/square-3.png"></div>
             </div>
           </div>
 
           <div class="col-md-6">
             <div data-parallax="0.5" class="ratio ratio-1:1">
-              <div data-parallax-target class="bg-image js-lazy" data-bg="img/project15/square-4.png"></div>
+              <div data-parallax-target class="bg-image js-lazy" data-bg="../img/project15/square-4.png"></div>
             </div>
           </div>
         </div>
@@ -458,7 +461,7 @@
         <div class="row no-gutters">
           <div class="col-12">
             <div data-parallax="0.5" class="h-100vh">
-              <div data-parallax-target class="bg-image js-lazy" data-bg="img/project15/wide-7.gif"></div>
+              <div data-parallax-target class="bg-image js-lazy" data-bg="../img/project15/wide-7.gif"></div>
             </div>
           </div>
         </div>
@@ -466,7 +469,7 @@
         <div class="row no-gutters">
           <div class="col-12">
             <div data-parallax="0.5" class="h-100vh">
-              <div data-parallax-target class="bg-image js-lazy" data-bg="img/project15/wide-8.gif"></div>
+              <div data-parallax-target class="bg-image js-lazy" data-bg="../img/project15/wide-8.gif"></div>
             </div>
           </div>
         </div>
@@ -474,7 +477,7 @@
         <div class="row no-gutters">
           <div class="col-12">
             <div data-parallax="0.5" class="h-100vh">
-              <div data-parallax-target class="bg-image js-lazy" data-bg="img/project15/wide-9.gif"></div>
+              <div data-parallax-target class="bg-image js-lazy" data-bg="../img/project15/wide-9.gif"></div>
             </div>
           </div>
         </div>
@@ -482,38 +485,37 @@
       <!-- image break end -->
 
 
-      <!-- Wirkung start -->
+      <!-- Impact start -->
       <section class="layout-pt-lg layout-pb-lg">
         <div class="container">
           <div class="row justify-content-center">
             <div class="col-xl-8 col-lg-9">
               <h2 class="text-3xl fw-600">
-                Wirkung
+                Impact
               </h2>
               <p class="text-lg text-black mt-24 sm:mt-16">
-                Vormals analoge Prozesse wurden digitalisiert: An die Stelle von
-                Fax-Bestellungen trat ein durchgängiger digitaler B2B-Bestellprozess.
-                Die Plattform ist heute auf Tablet und Smartphone nutzbar und tritt
-                über die aktiven Ländermärkte hinweg mit einem einheitlichen,
-                international abgestimmten Markenauftritt auf.
+                Previously analog processes went digital: a continuous digital
+                B2B ordering process replaced fax orders. The platform now works
+                on tablet and phone, and presents a single, internationally
+                aligned brand across the active country markets.
               </p>
               <p class="leading-5xl mt-24 sm:mt-16">
-                Der auf B2B-Bedürfnisse zugeschnittene Checkout und die neue
-                Konfigurationsmöglichkeit für Sonderanfertigungen ersetzen manuelle
-                Abwicklung durch Self-Service.
+                The checkout, rebuilt around B2B needs, and the new
+                configuration option for custom orders replace manual handling
+                with self-service.
               </p>
               <div class="impact-statement">
                 <p>
-                  Die Plattform trägt heute rund 200 Mio. € Jahresumsatz und wird als
-                  strategisches Werkzeug konzernweit weiter ausgebaut, um Prozesse
-                  angeschlossener Geschäftsbereiche zu digitalisieren.
+                  The platform now carries around €200M in annual revenue and
+                  is being expanded group-wide as a strategic tool to digitize
+                  processes in connected business units.
                 </p>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <!-- Wirkung end -->
+      <!-- Impact end -->
 
 
       <!-- image break start -->
@@ -521,7 +523,7 @@
         <div class="row no-gutters">
           <div class="col-12">
             <div data-parallax="0.5" class="h-100vh">
-              <div data-parallax-target class="bg-image js-lazy" data-bg="img/project15/wide-1.png"></div>
+              <div data-parallax-target class="bg-image js-lazy" data-bg="../img/project15/wide-1.png"></div>
             </div>
           </div>
         </div>
@@ -529,7 +531,7 @@
         <div class="row no-gutters">
           <div class="col-12">
             <div data-parallax="0.5" class="h-100vh">
-              <div data-parallax-target class="bg-image js-lazy" data-bg="img/project15/wide-2.png"></div>
+              <div data-parallax-target class="bg-image js-lazy" data-bg="../img/project15/wide-2.png"></div>
             </div>
           </div>
         </div>
@@ -537,28 +539,28 @@
       <!-- image break end -->
 
 
-      <!-- Rolle & Zusammenarbeit start -->
+      <!-- Role & Collaboration start -->
       <section class="layout-pt-lg layout-pb-lg">
         <div class="container">
           <div class="row justify-content-center">
             <div class="col-xl-8 col-lg-9">
               <h2 class="text-3xl fw-600">
-                Rolle & Zusammenarbeit
+                Role & Collaboration
               </h2>
               <p class="text-lg text-black mt-24 sm:mt-16">
-                Es handelt sich nicht um ein abgeschlossenes Projekt, sondern um eine
-                seit 2022 fortlaufende Produktverantwortung.
+                This isn't a closed project — it's ongoing product ownership
+                since 2022.
               </p>
               <p class="leading-5xl mt-24 sm:mt-16">
-                Ich arbeite cross-funktional mit der Entwicklung, dem internationalen
-                Marketing- und Designteam sowie dem Design Lead in den USA und
-                stimme Konzepte direkt mit Kunden und Endnutzern ab.
+                I work cross-functionally with engineering, the international
+                marketing and design team, and the design lead in the US, and
+                align concepts directly with clients and end users.
               </p>
             </div>
           </div>
         </div>
       </section>
-      <!-- Rolle & Zusammenarbeit end -->
+      <!-- Role & Collaboration end -->
 
 
       <!-- image break start -->
@@ -566,7 +568,7 @@
         <div class="row no-gutters">
           <div class="col-12">
             <div data-parallax="0.5" class="h-100vh">
-              <div data-parallax-target class="bg-image js-lazy" data-bg="img/project15/wide-3.png"></div>
+              <div data-parallax-target class="bg-image js-lazy" data-bg="../img/project15/wide-3.png"></div>
             </div>
           </div>
         </div>
@@ -574,7 +576,7 @@
         <div class="row no-gutters">
           <div class="col-12">
             <div data-parallax="0.5" class="h-100vh">
-              <div data-parallax-target class="bg-image js-lazy" data-bg="img/project15/wide-4.png"></div>
+              <div data-parallax-target class="bg-image js-lazy" data-bg="../img/project15/wide-4.png"></div>
             </div>
           </div>
         </div>
@@ -582,7 +584,7 @@
         <div class="row no-gutters">
           <div class="col-12">
             <div data-parallax="0.5" class="h-100vh">
-              <div data-parallax-target class="bg-image js-lazy" data-bg="img/project15/wide-6.png"></div>
+              <div data-parallax-target class="bg-image js-lazy" data-bg="../img/project15/wide-6.png"></div>
             </div>
           </div>
         </div>
@@ -600,17 +602,17 @@
             <div class="row y-gap-48 justify-content-between">
               <div class="col-lg-auto col-sm-12">
                 <a href="index.html" class="footer__logo text-white">
-                  <img class="js-lazy" src="#" data-src="img/logo/logo-light.svg" alt="Logo">
+                  <img class="js-lazy" src="#" data-src="../img/logo/logo-light.svg" alt="Logo">
                 </a>
               </div>
 
               <div class="col-lg-3 col-sm-6">
                 <h4 class="text-xl fw-500 text-white">
-                  Kontakt
+                  Contact
                 </h4>
 
                 <div class="footer__content text-base text-light mt-16 sm:mt-12">
-                  <p>Kolpingstraße 7, 48629 Metelen</p>
+                  <p>Kolpingstraße 7, 48629 Metelen, Germany</p>
                   <p class="mt-8"><a href="mailto:info@christian-epping.com">info@christian-epping.com</a></p>
                   <p class="mt-8"><a href="tel:01705508124">+49 170 55 08 124</a></p>
                 </div>
@@ -622,15 +624,15 @@
                 </h4>
 
                 <div class="footer__content text-base text-light mt-16 sm:mt-12">
-                   <div><a data-barba href="ueber.html" class="button -underline mt-4">Über mich</a></div>
-					   <div><a data-barba href="impressum.html" class="button -underline mt-4">Impressum</a></div>
-					   <div><a data-barba href="datenschutz.html" class="button -underline mt-4">Datenschutz</a></div>
+                   <div><a data-barba href="ueber.html" class="button -underline mt-4">About</a></div>
+						   <div><a data-barba href="impressum.html" class="button -underline mt-4">Legal Notice</a></div>
+						   <div><a data-barba href="datenschutz.html" class="button -underline mt-4">Privacy Policy</a></div>
                 </div>
               </div>
 
               <div class="col-lg-auto col-auto">
                 <h4 class="text-xl fw-500 text-white">
-                  Plattformen
+                  Elsewhere
                 </h4>
 
                 <div class="social -bordered mt-16 sm:mt-12">
@@ -674,8 +676,8 @@
 
 
   <!-- JavaScript -->
-  <script src="js/vendors.js"></script>
-  <script src="js/main.js"></script>
+  <script src="../js/vendors.js"></script>
+  <script src="../js/main.js"></script>
 
 </body>
 

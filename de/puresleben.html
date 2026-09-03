@@ -8,27 +8,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- Stylesheets -->
-  <link rel="stylesheet" href="css/vendors.css">
-  <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="../css/vendors.css">
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/style.css">
 
   <!-- Favicon -->
-  <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
-  <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
-  <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png">
-  <link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-icon-76x76.png">
-  <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-icon-114x114.png">
-  <link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-icon-120x120.png">
-  <link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-icon-144x144.png">
-  <link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-icon-152x152.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
-  <link rel="icon" type="image/png" sizes="192x192" href="img/favicon/android-icon-192x192.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
-  <link rel="manifest" href="img/favicon/manifest.json">
+  <link rel="apple-touch-icon" sizes="57x57" href="../img/favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="../img/favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="../img/favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="../img/favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="../img/favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="../img/favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="../img/favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="../img/favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../img/favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="../img/favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="../img/favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon/favicon-16x16.png">
+  <link rel="manifest" href="../img/favicon/manifest.json">
   <meta name="msapplication-TileColor" content="#ffffff">
-  <meta name="msapplication-TileImage" content="img/favicon/ms-icon-144x144.png">
+  <meta name="msapplication-TileImage" content="../img/favicon/ms-icon-144x144.png">
   <meta name="theme-color" content="#ffffff">
 
   <title>Christian Epping</title>
@@ -43,7 +43,7 @@
 
     <div class="preloader__progress">
       <div class="preloader__progress__inner"></div>
-      <img src="img/general/loader.svg" alt="preloader image" class="preloader__img">
+      <img src="../img/general/loader.svg" alt="preloader image" class="preloader__img">
     </div>
   </div>
   <!-- preloader end -->
@@ -77,19 +77,20 @@
 
 
       <!-- header start -->
-      <header class="header -light -sticky-light js-header">
+      <header class="header -dark -sticky-light js-header">
         <!-- header__bar start -->
         <div class="header__bar">
           <div class="header__logo js-header-logo">
             <a data-barba href="index.html">
-              <img class="header__logo__light js-lazy" src="#" data-src="img/logo/logo-light.svg" alt="Logo">
+              <img class="header__logo__light js-lazy" src="#" data-src="../img/logo/logo-light.svg" alt="Logo">
             </a>
             <a data-barba href="index.html">
-              <img class="header__logo__dark js-lazy" src="#" data-src="img/logo/logo-dark.svg" alt="Logo">
+              <img class="header__logo__dark js-lazy" src="#" data-src="../img/logo/logo-dark.svg" alt="Logo">
             </a>
           </div>
 
           <div class="header__menu js-header-menu">
+            <a data-barba href="../en/index.html" class="header__lang">EN</a>
             <button type="button" class="nav-button-open js-nav-open">
               <i class="icon" data-feather="menu"></i>
               <span></span>
@@ -223,33 +224,25 @@
 
 
 
-      <!-- section start -->
-      <section class="masthead -type-work-1 sm:text-center js-masthead-type-work-1 js-shapes">
-        <!-- shapes start -->
-        <div class="masthead-shapes -group-4">
-          <div class="masthead-shapes__item -item-1">
-            <div class="masthead-shapes__shape -white -shadow-light js-shape"></div>
-          </div>
-          <div class="masthead-shapes__item -item-2">
-            <div class="masthead-shapes__shape -white -shadow-light js-shape"></div>
-          </div>
+      <!-- page header start -->
+      <section class="masthead -type-work-1 -full-screen bg-black sm:text-center js-masthead-type-work-1 js-bg">
+        <div data-parallax="0.7" class="masthead__bg overlay-black-md js-image">
+          <div data-parallax-target class="bg-image js-lazy js-bg-item" data-bg="../img/projects/horizontal/12.jpg"></div>
         </div>
-        <!-- shapes end -->
 
-        <!-- masthead__content start -->
         <div class="masthead__content">
           <div class="container-fluid">
             <div class="row justify-content-center">
-              <div class="col-xl-9 col-sm-10 z-3">
+              <div class="col-xl-10 col-sm-10 z-3">
                 <div data-split="lines">
-                  <p class="masthead__subtitle text-lg sm:text-base mb-32 sm:mb-24 js-subtitle">
-                    UX-/UI-Design
+                  <p class="masthead__subtitle text-lg sm:text-base text-white mb-32 sm:mb-24 js-subtitle">
+                    UX/UI-Design
                   </p>
                 </div>
 
                 <div data-split="lines">
-                  <h1 class="masthead__title fw-700 js-title">
-                    e² project cloud systems
+                  <h1 class="masthead__title text-white fw-700 js-title">
+                    Pures Leben
                   </h1>
                 </div>
 
@@ -259,8 +252,8 @@
                     <div class="col-lg-auto  col-sm-6">
                       <div class="masthead__info">
                         <div data-split="lines" class="masthead__item js-info-item">
-                          <h5 class="text-lg leading-sm fw-600">Rolle</h5>
-                          <p class="text-lg leading-sm mt-12 sm:mt-8">Senior UX-/UI-Designer | Information Architect</p>
+                          <h5 class="text-lg leading-sm fw-600 text-white">Rolle</h5>
+                          <p class="text-lg leading-sm text-light mt-12 sm:mt-8">Senior UX/UI-Designer</p>
                         </div>
                       </div>
                     </div>
@@ -268,8 +261,8 @@
                     <div class="col-lg-auto offset-lg-1 col-sm-6">
                       <div class="masthead__info">
                         <div data-split="lines" class="masthead__item js-info-item">
-                          <h5 class="text-lg leading-sm fw-600">Start</h5>
-                          <p class="text-lg leading-sm mt-12 sm:mt-8">10|2020</p>
+                          <h5 class="text-lg leading-sm fw-600 text-white">Start</h5>
+                          <p class="text-lg leading-sm text-light mt-12 sm:mt-8">05|2021</p>
                         </div>
                       </div>
                     </div>
@@ -277,8 +270,8 @@
                     <div class="col-lg-auto offset-lg-1 col-sm-6">
                       <div class="masthead__info">
                         <div data-split="lines" class="masthead__item js-info-item">
-                          <h5 class="text-lg leading-sm fw-600">Launch</h5>
-                          <p class="text-lg leading-sm mt-12 sm:mt-8">11|2021</p>
+                          <h5 class="text-lg leading-sm fw-600 text-white">Launch</h5>
+                          <p class="text-lg leading-sm text-light mt-12 sm:mt-8">01|2022</p>
                         </div>
                       </div>
                     </div>
@@ -286,9 +279,9 @@
                     <div class="col-lg-auto offset-lg-1 col-sm-6">
                       <div class="masthead__info">
                         <div data-split="lines" class="masthead__item js-info-item">
-                          <h5 class="text-lg leading-sm fw-600">URL</h5>
-                          <a href="https://christian-epping.com/" class="button d-block fw-500 text-lg leading-sm text-black mt-12 sm:mt-8">
-                            Interne Lösung
+                          <h5 class="text-lg leading-sm fw-600 text-white">Website</h5>
+                          <a href="https://www.pures-leben.de/modern-apartment/modern-apartment.html" class="button d-block fw-500 text-lg leading-sm text-white mt-12 sm:mt-8">
+                            Pures Leben
                           </a>
                         </div>
                       </div>
@@ -300,20 +293,11 @@
             </div>
           </div>
         </div>
-        <!-- masthead__content end -->
-
-        <!-- container start -->
-        <div class="container-wide z-5 relative">
-          <div data-parallax="0.7" class="h-lg z-5 js-image">
-            <div data-parallax-target class="bg-image js-lazy" data-bg="img/projects/horizontal/1.jpg"></div>
-          </div>
-        </div>
-        <!-- container end -->
       </section>
-      <!-- section end -->
+      <!-- page header end -->
 
 
-      <!-- section start -->
+				      <!-- section start -->
       <section class="layout-pt-lg layout-pb-lg">
         <!-- container start -->
         <div class="container">
@@ -323,7 +307,7 @@
             <div class="col-auto">
               <div class="d-flex text-xs tracking-md pt-4">
                 <p class="text-accent fw-600 mr-16">01.-</p>
-                <p class="uppercase fw-500">Kontext</p>
+                <p class="uppercase fw-500">Anforderungen</p>
               </div>
             </div>
 
@@ -331,16 +315,15 @@
             <div class="col-xl-7 col-lg-8">
               <div class="md:mt-20">
                 <h2 class="text-3xl fw-600">
-                  Herausforderung
+                  Informativer Online-Touchpoint
                 </h2>
                 <p class="text-lg text-black mt-24 sm:mt-16">
-                  Zentrale Unternehmensprozesse sollten in EINER Lösung strukturiert zusammengefasst werden. Anspruch und Zielsetzung des 
-					Kunden war: "Unser gesamtes Projektmanagement in der Hosentasche"
-					</p>
+                  Das Geschäftsmodell des Kunden sieht vor, potentielle Mieter als ersten Touchpoint über eine moderne und cleane Informations-Website für seine möblierten Appartments zu begeistern. Hierzu wird eine Plattform benötigt, welche die
+				  notwendigen Informationen bereitstellt als auch Möglichkeiten zur Kontaktaufnahme bietet. 
+                </p>
                 <p class="leading-5xl mt-24 sm:mt-16">
-				Protokolle, Dokumente, Fotos, Auditierungen und bestehende Prozesse mussten analysiert und in eine neue gesamtheitliche
-				  Informations- und Entscheidungsstruktur überführt werden. Hierzu wurden verschiedene Tools wie z. B. Mindmaps und Design 
-					Thinking genutzt.
+                  Der Touchpoint soll übersichtlich, emotional begeisternd und informativ sein. Ebenso soll die Navigation intuitiv, vor allem auf mobilen Geräten innerhalb eines Mobile-First-Konzeptes erfolgen. Im Rahmen von Workshops mit dem Kunden wurde das Konzept
+				  erarbeitet sowie die anzusprechende Zielgruppe definiert.
                 </p>
               </div>
             </div>
@@ -351,18 +334,27 @@
         <!-- container end -->
       </section>
       <!-- section end -->
-
-
+		
       <!-- section start -->
       <div>
-        <div data-parallax="0.7" class="h-80vh">
-          <div data-parallax-target class="bg-image js-lazy" data-bg="img/project1/wide-1.jpg"></div>
+        <!-- row start -->
+        <div class="row no-gutters">
+
+		<div class="col-12">
+            <div data-parallax="0.5" class="h-80vh">
+              <div data-parallax-target class="bg-image js-lazy" data-bg="../img/project12/wide-3.jpg"></div>
+            </div>
+          </div>
         </div>
-      </div>
+		
+			
+	  </div>
+	   <!-- row end -->
       <!-- section end -->
+		
 
-
-      <!-- section start -->
+		
+						      <!-- section start -->
       <section class="layout-pt-lg layout-pb-lg">
         <!-- container start -->
         <div class="container">
@@ -372,7 +364,7 @@
             <div class="col-auto">
               <div class="d-flex text-xs tracking-md pt-4">
                 <p class="text-accent fw-600 mr-16">02.-</p>
-                <p class="uppercase fw-500">Next Steps</p>
+                <p class="uppercase fw-500">Design</p>
               </div>
             </div>
 
@@ -380,10 +372,13 @@
             <div class="col-xl-7 col-lg-8">
               <div class="md:mt-20">
                 <h2 class="text-3xl fw-600">
-                  Wireframing, Designsystem und Prototyping
+                  Iterativer Designprozess
                 </h2>
+                <p class="text-lg text-black mt-24 sm:mt-16">
+                  Erstellung von Low-Fidelity-Wireframes in enger und iterativer Absprache mit dem Kunden, um ein genaues konzeptionelles Vorgehen zu ermöglichen. Anschließende Entwicklung von High-Fidelity-Prototypen für mobile Geräte als auch für den Desktop-Viewport. 
+                </p>
                 <p class="leading-5xl mt-24 sm:mt-16">
-                  Nachdem alle Daten und die Informationsarchitektur standen, wurden Wireframes sowie ein entsprechendes Designsystem entworfen. Die Wireframes und das Designsystem wurden anschließend in einen High-Fidelity-Prototyp übertragen. Der Design-Part war hier abgeschlossen und der Prototyp wurde dem Entwicklerteam zur Umsetzung im Rahmen eines Kickoffs übergeben.
+                  Weitere Feinheiten wie ausgestaltung von Call-to-Actions und dem dahinter liegenden Vertriebs-Workflow wurden in gemeinsamen Terminen mit dem Kunden erarbeitet und auf die jeweilige User-Zielgruppe angepasst. Nach Freigabe wurde der entwickelte Prototyp dem Inhouse-Entwicklungsteam im Rahmen eines Kick-Offs übergeben.
                 </p>
               </div>
             </div>
@@ -394,36 +389,39 @@
         <!-- container end -->
       </section>
       <!-- section end -->
-
+		
+		
 
       <!-- section start -->
       <div>
-        <div class="js-section-slider" data-slider-col="base-2 lg-2 md-1 sm-1" data-gap="40" data-loop data-center data-pagination>
-          <div class="swiper-wrapper">
-
-            <div class="swiper-slide slider-slide">
-              <div class="ratio ratio-3:2 bg-image swiper-lazy" data-background="img/project1/slider-1.jpg"></div>
+        <!-- row start -->
+        <div class="row no-gutters">
+          
+		  <div class="col-md-6">
+            <div data-parallax="0.5" class="ratio ratio-1:1">
+              <div data-parallax-target class="bg-image js-lazy" data-bg="../img/project12/square-1.jpg"></div>
             </div>
-
-            <div class="swiper-slide slider-slide">
-              <div class="ratio ratio-3:2 bg-image swiper-lazy" data-background="img/project1/slider-2.jpg"></div>
-            </div>
-
-            <div class="swiper-slide slider-slide">
-              <div class="ratio ratio-3:2 bg-image swiper-lazy" data-background="img/project1/slider-3.jpg"></div>
-            </div>
-
           </div>
+						
 
-          <div class="pagination -dark pb-4 mt-48 js-pagination"></div>
-        </div>
-      </div>
+          <div class="col-md-6">
+            <div data-parallax="0.5" class="ratio ratio-1:1">
+              <div data-parallax-target class="bg-image js-lazy" data-bg="../img/project12/square-2.jpg"></div>
+            </div>
+          </div>
+		</div>
+		  
+	 </div>
+	  
+        <!-- row end -->
       <!-- section end -->
 
-
-      <!-- section start -->
+		
+								      <!-- section start -->
       <section class="layout-pt-lg layout-pb-lg">
+        <!-- container start -->
         <div class="container">
+          <!-- row start -->
           <div class="row justify-content-between">
 
             <div class="col-auto">
@@ -437,28 +435,85 @@
             <div class="col-xl-7 col-lg-8">
               <div class="md:mt-20">
                 <h2 class="text-3xl fw-600">
-                  Ein effizientes Ökosystem
+                  Moderner und mobil optimierter Touchpoint
                 </h2>
+                <p class="text-lg text-black mt-24 sm:mt-16">
+                  Moderne und frische User Experience mit anmutender Optik. Kunden des Unternehmens bestätigten in Tests die intuitive Navigation, besonders im Hinblick auf mobile Endgeräte. Ebenso die moderne Ästhetik sorgte für positives Feedback. 
+                </p>
                 <p class="leading-5xl mt-24 sm:mt-16">
-                  Nach erfolgter Umsetzung kann der Kunde nun mit diesem umfangreichen Produkt seine internen Prozesse sowie auditrelevante
-					Standorte seiner Projekte deutlich schlanker, papierlos und revisionssicher managen. Das Produkt wird weiterhin um
-					zusätzliche Funktionen wie Routenplanung, Zeiterfassung und Rechte-Management erweitert.
+Die Plattform ist für die Zukunft und eine gute Ansprache der Kunden des Unternehmens gerüstet und wird ihre Aktualität über die nächsten Jahre behalten. Es folgen Ansichten des finalen Auftritts.
                 </p>
               </div>
             </div>
 
           </div>
+          <!-- row end -->
         </div>
+        <!-- container end -->
       </section>
       <!-- section end -->
-
-
-      <!-- section start -->
+		
+		  
+	 <!-- section start -->
       <div>
-        <div data-parallax="0.7" class="h-80vh">
-          <div data-parallax-target class="bg-image js-lazy" data-bg="img/project1/wide-2.jpg"></div>
+        <!-- row start -->
+        <div class="row no-gutters">
+          <div class="col-12">
+            <div data-parallax="0.5" class="h-80vh">
+              <div data-parallax-target class="bg-image js-lazy" data-bg="../img/project12/wide-1.jpg"></div>
+            </div>
+          </div>
+		<div class="col-12">
+            <div data-parallax="0.5" class="h-80vh">
+              <div data-parallax-target class="bg-image js-lazy" data-bg="../img/project12/wide-4.jpg"></div>
+            </div>
+          </div>	
+
+		  
+	   <div class="col-md-6">
+            <div data-parallax="0.5" class="ratio ratio-1:1">
+              <div data-parallax-target class="bg-image js-lazy" data-bg="../img/project12/square-3.gif"></div>
+            </div>
+          </div>
+						
+
+          <div class="col-md-6">
+            <div data-parallax="0.5" class="ratio ratio-1:1">
+              <div data-parallax-target class="bg-image js-lazy" data-bg="../img/project12/square-4.gif"></div>
+            </div>
+          </div>
+		</div>
+		  	   </div>
+        <!-- row end -->
+      <!-- section end -->
+		
+	 <!-- section start -->
+      <section data-parallax="0.7" class="layout-pt-lg layout-pb-lg">
+        <div data-parallax-target class="overlay-black-md bg-image js-lazy" data-bg="../img/project12/wide-1.jpg"></div>
+
+        <!-- container start -->
+        <div class="container z-5">
+          <!-- row start -->
+          <div class="row justify-content-center text-center">
+            <div class="col-12">
+              <p class="text-sm uppercase tracking-lg text-white mb-20">
+                Projekt live ansehen
+              </p>
+
+              <h2 class="text-5xl sm:text-5xl xs:text-4xl leading-sm fw-700 text-white">
+                Sie möchten das Endprodukt erleben?
+              </h2>
+
+              <a href="https://www.pures-leben.de/modern-apartment/modern-apartment.html" target="_blank" 
+				 class="button -md -white text-black mt-32">
+                PROJEKT ANSEHEN
+              </a>
+            </div>
+          </div>
+          <!-- row end -->
         </div>
-      </div>
+        <!-- container end -->
+      </section>
       <!-- section end -->
 
 
@@ -472,7 +527,7 @@
             <div class="row y-gap-48 justify-content-between">
               <div class="col-lg-auto col-sm-12">
                 <a href="index.html" class="footer__logo text-white">
-                  <img class="js-lazy" src="#" data-src="img/logo/logo-light.svg" alt="Logo">
+                  <img class="js-lazy" src="#" data-src="../img/logo/logo-light.svg" alt="Logo">
                 </a>
               </div>
 
@@ -546,8 +601,8 @@
 
 
   <!-- JavaScript -->
-  <script src="js/vendors.js"></script>
-  <script src="js/main.js"></script>
+  <script src="../js/vendors.js"></script>
+  <script src="../js/main.js"></script>
 
 </body>
 

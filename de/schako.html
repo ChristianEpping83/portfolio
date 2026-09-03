@@ -8,28 +8,33 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- Stylesheets -->
-  <link rel="stylesheet" href="css/vendors.css">
-  <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="../css/vendors.css">
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/style.css">
 
   <!-- Favicon -->
-  <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
-  <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
-  <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png">
-  <link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-icon-76x76.png">
-  <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-icon-114x114.png">
-  <link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-icon-120x120.png">
-  <link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-icon-144x144.png">
-  <link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-icon-152x152.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
-  <link rel="icon" type="image/png" sizes="192x192" href="img/favicon/android-icon-192x192.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
-  <link rel="manifest" href="img/favicon/manifest.json">
+  <link rel="apple-touch-icon" sizes="57x57" href="../img/favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="../img/favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="../img/favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="../img/favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="../img/favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="../img/favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="../img/favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="../img/favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../img/favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="../img/favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="../img/favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon/favicon-16x16.png">
+  <link rel="manifest" href="../img/favicon/manifest.json">
   <meta name="msapplication-TileColor" content="#ffffff">
-  <meta name="msapplication-TileImage" content="img/favicon/ms-icon-144x144.png">
+  <meta name="msapplication-TileImage" content="../img/favicon/ms-icon-144x144.png">
   <meta name="theme-color" content="#ffffff">
+
+  <!-- Language versions -->
+  <link rel="alternate" hreflang="de" href="https://christian-epping.com/de/schako.html">
+  <link rel="alternate" hreflang="en" href="https://christian-epping.com/en/schako.html">
+  <link rel="alternate" hreflang="x-default" href="https://christian-epping.com/">
 
   <title>Christian Epping</title>
 </head>
@@ -43,7 +48,7 @@
 
     <div class="preloader__progress">
       <div class="preloader__progress__inner"></div>
-      <img src="img/general/loader.svg" alt="preloader image" class="preloader__img">
+      <img src="../img/general/loader.svg" alt="preloader image" class="preloader__img">
     </div>
   </div>
   <!-- preloader end -->
@@ -82,14 +87,15 @@
         <div class="header__bar">
           <div class="header__logo js-header-logo">
             <a data-barba href="index.html">
-              <img class="header__logo__light js-lazy" src="#" data-src="img/logo/logo-light.svg" alt="Logo">
+              <img class="header__logo__light js-lazy" src="#" data-src="../img/logo/logo-light.svg" alt="Logo">
             </a>
             <a data-barba href="index.html">
-              <img class="header__logo__dark js-lazy" src="#" data-src="img/logo/logo-dark.svg" alt="Logo">
+              <img class="header__logo__dark js-lazy" src="#" data-src="../img/logo/logo-dark.svg" alt="Logo">
             </a>
           </div>
 
           <div class="header__menu js-header-menu">
+            <a data-barba href="../en/schako.html" class="header__lang">EN</a>
             <button type="button" class="nav-button-open js-nav-open">
               <i class="icon" data-feather="menu"></i>
               <span></span>
@@ -226,7 +232,7 @@
       <!-- page header start -->
       <section class="masthead -type-work-1 -full-screen bg-black sm:text-center js-masthead-type-work-1 js-bg">
         <div data-parallax="0.7" class="masthead__bg overlay-black-md js-image">
-          <div data-parallax-target class="bg-image js-lazy js-bg-item" data-bg="img/projects/horizontal/23.png"></div>
+          <div data-parallax-target class="bg-image js-lazy js-bg-item" data-bg="../img/projects/horizontal/schako.jpg"></div>
         </div>
 
         <div class="masthead__content">
@@ -241,7 +247,7 @@
 
                 <div data-split="lines">
                   <h1 class="masthead__title text-white fw-700 js-title">
-                    Union Investment
+                    SCHAKO KG
                   </h1>
                 </div>
 
@@ -261,7 +267,7 @@
                       <div class="masthead__info">
                         <div data-split="lines" class="masthead__item js-info-item">
                           <h5 class="text-lg leading-sm fw-600 text-white">Zeitraum</h5>
-                          <p class="text-lg leading-sm text-light mt-12 sm:mt-8">01|2025 – 03|2025</p>
+                          <p class="text-lg leading-sm text-light mt-12 sm:mt-8">2023 – ongoing</p>
                         </div>
                       </div>
                     </div>
@@ -270,7 +276,7 @@
                       <div class="masthead__info">
                         <div data-split="lines" class="masthead__item js-info-item">
                           <h5 class="text-lg leading-sm fw-600 text-white">Branche</h5>
-                          <p class="text-lg leading-sm text-light mt-12 sm:mt-8">Asset Management / Finanzen (reguliert)</p>
+                          <p class="text-lg leading-sm text-light mt-12 sm:mt-8">Technische Gebäudeausrüstung (TGA) · Lüftungs- & Klimatechnik · B2B-SaaS</p>
                         </div>
                       </div>
                     </div>
@@ -291,14 +297,15 @@
           <div class="row justify-content-center">
             <div class="col-xl-8 col-lg-9">
               <p class="text-2xl case-study-lead">
-                Für einen großen deutschen Asset-Manager habe ich das Interface eines
-                gewachsenen Datenanlieferungssystems neu strukturiert – das Werkzeug,
-                über das die Aufbereitung und Lieferung komplexer Finanzdaten für
-                Liquiditäts-Forecasts und Dachfonds-Reportings läuft. Die
-                Herausforderung: zehntausende Datensätze aus unterschiedlichen
-                Quellen in einem Workflow beherrschbar machen, in einem stark
-                regulierten Umfeld – auf Basis des bestehenden
-                Union-Investment-Design-Systems.
+                SCHAKO stellt seit 1928 lufttechnische Komponenten her und gilt
+                als Erfinder des Drallauslasses — heute ein europäisches
+                Kompetenzzentrum für Belüftung und Klimatisierung. Mit
+                SCHAKOnext überführt das Unternehmen seinen Produktkatalog in
+                eine digitale Planungsplattform. Meine Aufgabe war, daraus ein
+                Werkzeug zu machen, das Lüftungs- und TGA-Fachplaner früher im
+                Projekt abholt — vor Konfiguration und Ausschreibung — und
+                dabei die technische Präzision liefert, die diese Zielgruppe
+                erwartet.
               </p>
             </div>
           </div>
@@ -312,29 +319,28 @@
         <div class="container">
           <div class="row justify-content-center">
             <div class="col-xl-8 col-lg-9">
-              <p class="text-sm uppercase tracking-md text-light mb-24">
-                Datenkomplexität im System
-              </p>
               <div class="row y-gap-40">
 
                 <div class="col-sm-6">
-                  <div class="stat__figure number -sm">20.000</div>
-                  <p class="stat__label text-base text-light mt-12">Stammdatensätze</p>
+                  <div class="stat__figure number -sm">End-to-End</div>
+                  <p class="stat__label text-base text-light mt-12">Verantwortungstiefe</p>
+                  <p class="text-sm text-light mt-4">Strategie → IA → Interaction → UX-Writing → Prototyp</p>
                 </div>
 
                 <div class="col-sm-6">
-                  <div class="stat__figure number -sm">4.500</div>
-                  <p class="stat__label text-base text-light mt-12">Fondsdatensätze</p>
+                  <div class="stat__figure number -sm">6</div>
+                  <p class="stat__label text-base text-light mt-12">Kernmodule konzipiert</p>
                 </div>
 
                 <div class="col-sm-6">
-                  <div class="stat__figure number -sm">2.500</div>
-                  <p class="stat__label text-base text-light mt-12">Immobiliendatensätze</p>
+                  <div class="stat__figure number -sm">WCAG 2.2<br>AA</div>
+                  <p class="stat__label text-base text-light mt-12">Accessibility-Standard</p>
                 </div>
 
                 <div class="col-sm-6">
-                  <div class="stat__figure number -sm">5.000</div>
-                  <p class="stat__label text-base text-light mt-12">Rendite-Berechnungen</p>
+                  <div class="stat__figure number -sm">Multi-Persona</div>
+                  <p class="stat__label text-base text-light mt-12">Zielgruppe</p>
+                  <p class="text-sm text-light mt-4">Fokus TGA-Fachplaner</p>
                 </div>
 
               </div>
@@ -354,19 +360,33 @@
                 Ausgangslage
               </h2>
               <p class="text-lg text-black mt-24 sm:mt-16">
-                Das bestehende System zur Datenanlieferung war über die Jahre
-                organisch gewachsen. Seine Kanban-Oberfläche bildete eher die
-                historische Systemlogik ab als die tatsächlichen Arbeitsabläufe der
-                Nutzer.
+                SCHAKO verfügte über einen leistungsfähigen Produktkonfigurator
+                und ein etabliertes Online-Auslegungsprogramm — beide setzten
+                jedoch spät im Arbeitsprozess der Planer an, nämlich bei der
+                Frage „Welches Produkt?". In der TGA-Planung entscheidet sich die
+                Komponentenwahl aber deutlich früher: Wer den Fachplaner erst
+                beim Konfigurieren erreicht, konkurriert bereits gegen
+                Entscheidungen, die längst gefallen sind. Der strategische Hebel
+                lag also nicht in einem besseren Konfigurator, sondern im
+                früheren Einstieg in den Planungs-Workflow — dort, wo etablierte
+                Plattformen des Wettbewerbs bislang den Takt vorgeben.
               </p>
               <p class="leading-5xl mt-24 sm:mt-16">
-                Für ein Werkzeug, über das die Datenbasis für Liquiditäts-Forecasts
-                und Dachfonds-Reportings entsteht, ist das kritisch: Zehntausende
-                Stamm-, Fonds- und Immobiliendatensätze sowie tausende
-                Rendite-Berechnungen müssen verlässlich, nachvollziehbar und
-                effizient durch den Prozess geführt werden. Im regulierten
-                Finanzumfeld ist Klarheit hier keine Komfortfrage, sondern
-                Voraussetzung für belastbare Ergebnisse.
+                Hinzu kam die Komplexität der Domäne. Fachplaner denken nicht in
+                Einzelprodukten, sondern in Strukturen: Projekt → Gebäude →
+                Geschoss → Raum → Anforderung → Komponente. Jeder Raum trägt
+                eigene lufttechnische Parameter — Volumenstrom, Druckverlust,
+                Schallpegel, Brandschutzanforderung. Ein Werkzeug, das an der
+                Produktebene beginnt, bildet diese Denkweise nicht ab und bremst
+                den Experten aus. Erschwerend wirkten strukturelle Datenlücken:
+                Produktdaten lagen über Ländergrenzen hinweg in getrennten
+                Silos. Die
+                Kernspannung des Projekts: maximale technische Tiefe für
+                Experten, ohne Erstnutzer zu überfordern — bei mehreren
+                Personas, die jede zusätzliche Klickstrecke als Zeitverlust
+                werten. Beispielhaft hier eine Exploration mit Nutzern zur
+                Thematik „Schnelle Raumbestückung", welche die Anlage immer
+                wieder vorkommender Standard-Räume erleichtert.
               </p>
             </div>
           </div>
@@ -380,7 +400,7 @@
         <div class="row no-gutters">
           <div class="col-12">
             <div data-parallax="0.5" class="h-100vh">
-              <div data-parallax-target class="bg-image js-lazy" data-bg="img/project23/wide-4.png"></div>
+              <div data-parallax-target class="bg-image js-lazy" data-bg="../img/project-schako/wide-4.png"></div>
             </div>
           </div>
         </div>
@@ -397,26 +417,38 @@
                 Vorgehen & Entscheidungen
               </h2>
               <p class="text-lg text-black mt-24 sm:mt-16">
-                Ich bin forschungsgeleitet vorgegangen, statt die Oberfläche nur
-                kosmetisch zu überarbeiten. In mehreren Usability-Reviews habe ich
-                die tatsächlichen Bedürfnisse der Nutzer erhoben und mit FigJam nach
-                Kategorien und Prioritäten geclustert – so wurde sichtbar, wo der
-                bestehende Workflow die Arbeit behinderte.
+                Die grundlegende Entscheidung war ein Reframing: weg vom
+                Konfigurator, hin zur Planungsplattform. Die gesamte
+                Informationsarchitektur wurde am realen mentalen Modell der
+                Planer ausgerichtet — Räume als zentrale Arbeitseinheit,
+                Komponenten als deren Inhalt. In der Projektansicht führt ein
+                raumbasiertes Register durch Geschosse und Räume; jede Zeile
+                trägt Position, Bezeichnung, den monospaced gesetzten
+                Produktschlüssel und die Menge, während ein kontextsensitives
+                Side-Panel Raumdaten, Luftmengen und Anmerkungen bündelt. So
+                bleibt die Übersicht flach, und die Tiefe wird erst auf Abruf
+                sichtbar.
               </p>
               <p class="leading-5xl mt-24 sm:mt-16">
-                Die zentrale Entscheidung: die Kanban-Oberfläche entlang der realen
-                Arbeitsabläufe neu zu strukturieren, nicht entlang der gewachsenen
-                Systemstruktur. Die optimierten UX-Flows habe ich in enger
-                Zusammenarbeit mit der Inhouse-Entwicklung von Union Investment in
-                die Umsetzung überführt.
+                Dieses Prinzip der schrittweisen Offenlegung (Progressive
+                Disclosure) trägt sich durch alle Module. Drei Entscheidungen
+                prägten das Ergebnis besonders. Erstens: ein durchdachtes
+                System für kritische Aktionen, das Nutzern auf einen Blick
+                zeigt, wie folgenreich ein Schritt ist, statt jede Löschung
+                gleich zu behandeln. Zweitens: technische Machbarkeit als
+                Design-Input — Umsetzungsgrenzen wurden nicht als Hindernis
+                behandelt, sondern flossen von Anfang an in die Gestaltung
+                ein. Drittens: Barrierefreiheit als Grundlinie statt
+                Nacharbeit, mit WCAG 2.2 AA als verbindlichem Standard von
+                Beginn an, validiert über eigenständige, klickbare
+                Prototypen.
               </p>
               <div class="impact-statement">
                 <p>
-                  Dabei habe ich bewusst auf dem bestehenden
-                  Union-Investment-Design-System aufgesetzt und dessen Komponenten
-                  genutzt und angepasst, statt eine parallele Bildsprache
-                  einzuführen – das hält das Ergebnis konsistent, wartbar und
-                  anschlussfähig an die übrige Systemlandschaft.
+                  „Ein Konfigurator fragt: Welches Produkt? Ein Planer denkt in
+                  Projekten, Räumen und Anforderungen. SCHAKOnext wurde entlang
+                  der Denkweise der Planer gebaut — nicht entlang des
+                  Produktkatalogs."
                 </p>
               </div>
             </div>
@@ -429,23 +461,9 @@
       <!-- image break start -->
       <section>
         <div class="row no-gutters">
-          <div class="col-md-6">
-            <div data-parallax="0.5" class="ratio ratio-1:1">
-              <div data-parallax-target class="bg-image js-lazy" data-bg="img/project23/square-1.png"></div>
-            </div>
-          </div>
-
-          <div class="col-md-6">
-            <div data-parallax="0.5" class="ratio ratio-1:1">
-              <div data-parallax-target class="bg-image js-lazy" data-bg="img/project23/square-2.png"></div>
-            </div>
-          </div>
-        </div>
-
-        <div class="row no-gutters">
           <div class="col-12">
             <div data-parallax="0.5" class="h-100vh">
-              <div data-parallax-target class="bg-image js-lazy" data-bg="img/project23/wide-1.png"></div>
+              <div data-parallax-target class="bg-image js-lazy" data-bg="../img/project-schako/square-1.png"></div>
             </div>
           </div>
         </div>
@@ -462,15 +480,26 @@
                 Wirkung
               </h2>
               <p class="text-lg text-black mt-24 sm:mt-16">
-                Aus einer gewachsenen, systemgetriebenen Oberfläche wurde ein
-                Workflow, der sich an der Arbeitsweise der Nutzer orientiert – für
-                die verlässliche Aufbereitung von zehntausenden Datensätzen bis hin
-                zu den darauf aufbauenden Rendite-Berechnungen.
+                Das Reframing verschaffte SCHAKO einen strategischen
+                Einstiegspunkt weiter vorn im Planungs-Workflow — genau dort,
+                wo die Komponentenwahl tatsächlich fällt. Statt einen
+                Konfigurator gegen etablierte Plattformen zu stellen,
+                positioniert SCHAKOnext sich als Planungsumgebung, in der der
+                Katalog nur ein Baustein von mehreren ist.
               </p>
               <p class="leading-5xl mt-24 sm:mt-16">
-                In Feedback-Runden und Tests bestätigten die Nutzer die nun
-                einfachere und intuitivere Handhabung; die zugrundeliegenden
-                Geschäftsprozesse wurden spürbar verschlankt.
+                Die erarbeiteten Konzepte bildeten die Grundlage für
+                die Priorisierung der nächsten Ausbaustufe — mit
+                KI-gestützter Vorauslegung, einem Template-Marktplatz und
+                einer integrierten Wissensebene. Für die KI-Funktionen wurden
+                dabei belastbare Designprinzipien gesetzt: Transparenz statt
+                „Magie", durchgängige Reversibilität jeder Vorschlagsaktion
+                sowie Confidence-Scoring und Provenance-Tracking — nicht als
+                Feature, sondern als Voraussetzung dafür, dass Planer den
+                Vorschlägen vertrauen und die fachliche Verantwortung klar
+                zuordenbar bleibt. Der Produktkonfigurator wurde in diesem
+                Zusammenhang ebenfalls redesigned und mit in den
+                Projekt-Workflow eingebettet (siehe nachfolgende Grafik).
               </p>
             </div>
           </div>
@@ -479,8 +508,21 @@
       <!-- Wirkung end -->
 
 
+      <!-- image break start -->
+      <section>
+        <div class="row no-gutters">
+          <div class="col-12">
+            <div data-parallax="0.5" class="h-100vh">
+              <div data-parallax-target class="bg-image js-lazy" data-bg="../img/project-schako/square-2.png"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- image break end -->
+
+
       <!-- Rolle & Zusammenarbeit start -->
-      <section class="layout-pt-lg layout-pb-lg">
+      <section class="layout-pt-lg layout-pb-sm">
         <div class="container">
           <div class="row justify-content-center">
             <div class="col-xl-8 col-lg-9">
@@ -488,10 +530,19 @@
                 Rolle & Zusammenarbeit
               </h2>
               <p class="text-lg text-black mt-24 sm:mt-16">
-                Als Senior UX/UI Designer habe ich die UX-Optimierung von der
-                Nutzerforschung über die Neustrukturierung bis zu den validierten
-                Flows verantwortet – cross-funktional mit der Inhouse-Entwicklung
-                und innerhalb des bestehenden Design-Systems des Kunden.
+                Ich verantwortete die UX/UI über die gesamte Tiefe — von der
+                strategischen Positionierung über Informationsarchitektur und
+                Interaction Design bis zu UX-Writing und Frontend-Prototyping.
+              </p>
+              <p class="leading-5xl mt-24 sm:mt-16">
+                Die Zusammenarbeit lief eng mit Product Ownership und
+                Entwicklung sowie mit fachlichen und standortübergreifenden
+                Stakeholdern; Implementierungsrealität und Datenlage flossen
+                dabei kontinuierlich als Gestaltungsparameter zurück ins
+                Design. Meine Prototypen dienten weniger der Illustration als
+                der Validierung: eigenständige, technisch anschlussfähige
+                Artefakte, an denen Konzepte vor der Umsetzung überprüfbar
+                wurden.
               </p>
             </div>
           </div>
@@ -500,25 +551,34 @@
       <!-- Rolle & Zusammenarbeit end -->
 
 
-      <!-- image break start -->
-      <section>
-        <div class="row no-gutters">
-          <div class="col-12">
-            <div data-parallax="0.5" class="h-100vh">
-              <div data-parallax-target class="bg-image js-lazy" data-bg="img/project23/wide-2.png"></div>
+      <!-- interaktive Demo start (nur Desktop, siehe .case-embed-section in style.css) -->
+      <section class="case-embed-section layout-pt-sm layout-pb-lg">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-xl-8 col-lg-9">
+              <p class="text-sm uppercase tracking-md text-light mb-16">
+                Interaktiv ausprobieren
+              </p>
+              <h2 class="text-3xl fw-600 mb-24">
+                Konzept & Design live erleben
+              </h2>
+              <p class="text-lg text-black mb-24">
+                Das Konzept lässt sich direkt im Browser bedienen — als
+                eigenständiger, klickbarer Prototyp ohne Login. Dieser
+                Prototyp zeigt beispielhaft die Bearbeitung von Massendaten
+                mit Veränderungsmöglichkeiten der Interface-Architektur:
+                Seitenpanel und Navigation sind per Klick ausblendbar, die
+                Density der Listeneinträge ist steuerbar, und umfangreiche
+                Spalten-Optionen lassen sich explorieren.
+              </p>
             </div>
           </div>
         </div>
-
-        <div class="row no-gutters">
-          <div class="col-12">
-            <div data-parallax="0.5" class="h-100vh">
-              <div data-parallax-target class="bg-image js-lazy" data-bg="img/project23/wide-3.png"></div>
-            </div>
-          </div>
+        <div class="container-fluid px-0">
+          <iframe class="case-embed" src="../schako-projektliste/Projektliste.dc.html" title="SCHAKOnext Projektliste — interaktive Demo" loading="lazy"></iframe>
         </div>
       </section>
-      <!-- image break end -->
+      <!-- interaktive Demo end -->
 
 
       <!-- footer start -->
@@ -531,7 +591,7 @@
             <div class="row y-gap-48 justify-content-between">
               <div class="col-lg-auto col-sm-12">
                 <a href="index.html" class="footer__logo text-white">
-                  <img class="js-lazy" src="#" data-src="img/logo/logo-light.svg" alt="Logo">
+                  <img class="js-lazy" src="#" data-src="../img/logo/logo-light.svg" alt="Logo">
                 </a>
               </div>
 
@@ -605,8 +665,8 @@
 
 
   <!-- JavaScript -->
-  <script src="js/vendors.js"></script>
-  <script src="js/main.js"></script>
+  <script src="../js/vendors.js"></script>
+  <script src="../js/main.js"></script>
 
 </body>
 

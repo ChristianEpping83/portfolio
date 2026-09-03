@@ -8,28 +8,33 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- Stylesheets -->
-  <link rel="stylesheet" href="css/vendors.css">
-  <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="../css/vendors.css">
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/style.css">
 
   <!-- Favicon -->
-  <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
-  <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
-  <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png">
-  <link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-icon-76x76.png">
-  <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-icon-114x114.png">
-  <link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-icon-120x120.png">
-  <link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-icon-144x144.png">
-  <link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-icon-152x152.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
-  <link rel="icon" type="image/png" sizes="192x192" href="img/favicon/android-icon-192x192.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
-  <link rel="manifest" href="img/favicon/manifest.json">
+  <link rel="apple-touch-icon" sizes="57x57" href="../img/favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="../img/favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="../img/favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="../img/favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="../img/favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="../img/favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="../img/favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="../img/favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../img/favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="../img/favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="../img/favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon/favicon-16x16.png">
+  <link rel="manifest" href="../img/favicon/manifest.json">
   <meta name="msapplication-TileColor" content="#ffffff">
-  <meta name="msapplication-TileImage" content="img/favicon/ms-icon-144x144.png">
+  <meta name="msapplication-TileImage" content="../img/favicon/ms-icon-144x144.png">
   <meta name="theme-color" content="#ffffff">
+
+  <!-- Language versions -->
+  <link rel="alternate" hreflang="de" href="https://christian-epping.com/de/lohmannrauscher.html">
+  <link rel="alternate" hreflang="en" href="https://christian-epping.com/en/lohmannrauscher.html">
+  <link rel="alternate" hreflang="x-default" href="https://christian-epping.com/">
 
   <title>Christian Epping</title>
 </head>
@@ -43,7 +48,7 @@
 
     <div class="preloader__progress">
       <div class="preloader__progress__inner"></div>
-      <img src="img/general/loader.svg" alt="preloader image" class="preloader__img">
+      <img src="../img/general/loader.svg" alt="preloader image" class="preloader__img">
     </div>
   </div>
   <!-- preloader end -->
@@ -82,14 +87,15 @@
         <div class="header__bar">
           <div class="header__logo js-header-logo">
             <a data-barba href="index.html">
-              <img class="header__logo__light js-lazy" src="#" data-src="img/logo/logo-light.svg" alt="Logo">
+              <img class="header__logo__light js-lazy" src="#" data-src="../img/logo/logo-light.svg" alt="Logo">
             </a>
             <a data-barba href="index.html">
-              <img class="header__logo__dark js-lazy" src="#" data-src="img/logo/logo-dark.svg" alt="Logo">
+              <img class="header__logo__dark js-lazy" src="#" data-src="../img/logo/logo-dark.svg" alt="Logo">
             </a>
           </div>
 
           <div class="header__menu js-header-menu">
+            <a data-barba href="../en/lohmannrauscher.html" class="header__lang">EN</a>
             <button type="button" class="nav-button-open js-nav-open">
               <i class="icon" data-feather="menu"></i>
               <span></span>
@@ -226,7 +232,7 @@
       <!-- page header start -->
       <section class="masthead -type-work-1 -full-screen bg-black sm:text-center js-masthead-type-work-1 js-bg">
         <div data-parallax="0.7" class="masthead__bg overlay-black-md js-image">
-          <div data-parallax-target class="bg-image js-lazy js-bg-item" data-bg="img/projects/horizontal/schako.jpg"></div>
+          <div data-parallax-target class="bg-image js-lazy js-bg-item" data-bg="../img/projects/horizontal/15.png"></div>
         </div>
 
         <div class="masthead__content">
@@ -241,7 +247,7 @@
 
                 <div data-split="lines">
                   <h1 class="masthead__title text-white fw-700 js-title">
-                    SCHAKO KG
+                    Lohmann & Rauscher
                   </h1>
                 </div>
 
@@ -261,7 +267,7 @@
                       <div class="masthead__info">
                         <div data-split="lines" class="masthead__item js-info-item">
                           <h5 class="text-lg leading-sm fw-600 text-white">Zeitraum</h5>
-                          <p class="text-lg leading-sm text-light mt-12 sm:mt-8">2023 – ongoing</p>
+                          <p class="text-lg leading-sm text-light mt-12 sm:mt-8">seit 05|2022, laufend</p>
                         </div>
                       </div>
                     </div>
@@ -270,7 +276,7 @@
                       <div class="masthead__info">
                         <div data-split="lines" class="masthead__item js-info-item">
                           <h5 class="text-lg leading-sm fw-600 text-white">Branche</h5>
-                          <p class="text-lg leading-sm text-light mt-12 sm:mt-8">Technische Gebäudeausrüstung (TGA) · Lüftungs- & Klimatechnik · B2B-SaaS</p>
+                          <p class="text-lg leading-sm text-light mt-12 sm:mt-8">Medizin- & Gesundheitsprodukte, international</p>
                         </div>
                       </div>
                     </div>
@@ -285,30 +291,28 @@
       <!-- page header end -->
 
 
-      <!-- intro start -->
+      <!-- intro / Geschäftswert start -->
       <section class="layout-pt-lg layout-pb-md">
         <div class="container">
           <div class="row justify-content-center">
             <div class="col-xl-8 col-lg-9">
               <p class="text-2xl case-study-lead">
-                SCHAKO stellt seit 1928 lufttechnische Komponenten her und gilt
-                als Erfinder des Drallauslasses — heute ein europäisches
-                Kompetenzzentrum für Belüftung und Klimatisierung. Mit
-                SCHAKOnext überführt das Unternehmen seinen Produktkatalog in
-                eine digitale Planungsplattform. Meine Aufgabe war, daraus ein
-                Werkzeug zu machen, das Lüftungs- und TGA-Fachplaner früher im
-                Projekt abholt — vor Konfiguration und Ausschreibung — und
-                dabei die technische Präzision liefert, die diese Zielgruppe
-                erwartet.
+                Über die B2B-Plattform von Lohmann & Rauscher laufen rund
+                <strong class="fw-600">200 Mio. € Umsatz pro Jahr</strong> – etwa ein
+                Viertel des Gruppenumsatzes von ca. 800 Mio. €. Sie ist kein
+                Marketing-Kanal, sondern zentrale Vertriebsinfrastruktur. Seit 2022
+                verantworte ich UX und UI dieser Plattform und entwickle sie
+                fortlaufend weiter – in Abstimmung mit dem internationalen
+                Marketing- und Designteam.
               </p>
             </div>
           </div>
         </div>
       </section>
-      <!-- intro end -->
+      <!-- intro / Geschäftswert end -->
 
 
-      <!-- Kennzahlen-Block start -->
+      <!-- Kontext- & Zahlenblock start -->
       <section class="layout-pb-sm">
         <div class="container">
           <div class="row justify-content-center">
@@ -316,25 +320,33 @@
               <div class="row y-gap-40">
 
                 <div class="col-sm-6">
-                  <div class="stat__figure number -sm">End-to-End</div>
-                  <p class="stat__label text-base text-light mt-12">Verantwortungstiefe</p>
-                  <p class="text-sm text-light mt-4">Strategie → IA → Interaction → UX-Writing → Prototyp</p>
+                  <div class="stat__figure number -sm">60.000</div>
+                  <p class="stat__label text-base text-light mt-12">Produkte & Dienstleistungen im Sortiment</p>
                 </div>
 
                 <div class="col-sm-6">
-                  <div class="stat__figure number -sm">6</div>
-                  <p class="stat__label text-base text-light mt-12">Kernmodule konzipiert</p>
+                  <div class="stat__figure number -sm">~200 Mio. €</div>
+                  <p class="stat__label text-base text-light mt-12">Jahresumsatz über die Plattform</p>
                 </div>
 
                 <div class="col-sm-6">
-                  <div class="stat__figure number -sm">WCAG 2.2<br>AA</div>
-                  <p class="stat__label text-base text-light mt-12">Accessibility-Standard</p>
+                  <div class="stat__figure number -sm">6.300</div>
+                  <p class="stat__label text-base text-light mt-12">Mitarbeitende weltweit</p>
                 </div>
 
                 <div class="col-sm-6">
-                  <div class="stat__figure number -sm">Multi-Persona</div>
-                  <p class="stat__label text-base text-light mt-12">Zielgruppe</p>
-                  <p class="text-sm text-light mt-4">Fokus TGA-Fachplaner</p>
+                  <div class="stat__figure number -sm">18</div>
+                  <p class="stat__label text-base text-light mt-12">Produktionsstandorte in 13 Ländern</p>
+                </div>
+
+                <div class="col-sm-6">
+                  <div class="stat__figure number -sm">8.000+</div>
+                  <p class="stat__label text-base text-light mt-12">Partner weltweit</p>
+                </div>
+
+                <div class="col-sm-6">
+                  <div class="stat__figure number -sm">13</div>
+                  <p class="stat__label text-base text-light mt-12">Länder mit aktivem Shop-Betrieb</p>
                 </div>
 
               </div>
@@ -342,7 +354,7 @@
           </div>
         </div>
       </section>
-      <!-- Kennzahlen-Block end -->
+      <!-- Kontext- & Zahlenblock end -->
 
 
       <!-- Ausgangslage start -->
@@ -354,33 +366,17 @@
                 Ausgangslage
               </h2>
               <p class="text-lg text-black mt-24 sm:mt-16">
-                SCHAKO verfügte über einen leistungsfähigen Produktkonfigurator
-                und ein etabliertes Online-Auslegungsprogramm — beide setzten
-                jedoch spät im Arbeitsprozess der Planer an, nämlich bei der
-                Frage „Welches Produkt?". In der TGA-Planung entscheidet sich die
-                Komponentenwahl aber deutlich früher: Wer den Fachplaner erst
-                beim Konfigurieren erreicht, konkurriert bereits gegen
-                Entscheidungen, die längst gefallen sind. Der strategische Hebel
-                lag also nicht in einem besseren Konfigurator, sondern im
-                früheren Einstieg in den Planungs-Workflow — dort, wo etablierte
-                Plattformen des Wettbewerbs bislang den Takt vorgeben.
+                Ein über Jahre gewachsenes B2B-Portal mit rund 60.000 Positionen war
+                seiner Rolle als zentraler Vertriebskanal nicht mehr gewachsen. Ein
+                relevanter Teil der Bestellungen lief noch analog über Fax.
               </p>
               <p class="leading-5xl mt-24 sm:mt-16">
-                Hinzu kam die Komplexität der Domäne. Fachplaner denken nicht in
-                Einzelprodukten, sondern in Strukturen: Projekt → Gebäude →
-                Geschoss → Raum → Anforderung → Komponente. Jeder Raum trägt
-                eigene lufttechnische Parameter — Volumenstrom, Druckverlust,
-                Schallpegel, Brandschutzanforderung. Ein Werkzeug, das an der
-                Produktebene beginnt, bildet diese Denkweise nicht ab und bremst
-                den Experten aus. Erschwerend wirkten strukturelle Datenlücken:
-                Produktdaten lagen über Ländergrenzen hinweg in getrennten
-                Silos. Die
-                Kernspannung des Projekts: maximale technische Tiefe für
-                Experten, ohne Erstnutzer zu überfordern — bei mehreren
-                Personas, die jede zusätzliche Klickstrecke als Zeitverlust
-                werten. Beispielhaft hier eine Exploration mit Nutzern zur
-                Thematik „Schnelle Raumbestückung", welche die Anlage immer
-                wieder vorkommender Standard-Räume erleichtert.
+                Eine brauchbare mobile Nutzung existierte nicht, obwohl Partner und
+                Außendienst zunehmend auf Tablet und Smartphone arbeiteten. Die
+                Navigation durch ein Sortiment dieser Größe war mühsam, und der
+                Markenauftritt war über die verschiedenen Ländermärkte hinweg
+                uneinheitlich. Der Standard-Checkout des OXID-Systems bildete die
+                spezifischen Anforderungen des B2B-Geschäfts nur unzureichend ab.
               </p>
             </div>
           </div>
@@ -392,9 +388,15 @@
       <!-- image break start -->
       <section>
         <div class="row no-gutters">
-          <div class="col-12">
-            <div data-parallax="0.5" class="h-100vh">
-              <div data-parallax-target class="bg-image js-lazy" data-bg="img/project-schako/wide-4.png"></div>
+          <div class="col-md-6">
+            <div data-parallax="0.5" class="ratio ratio-1:1">
+              <div data-parallax-target class="bg-image js-lazy" data-bg="../img/project15/square-1.png"></div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div data-parallax="0.5" class="ratio ratio-1:1">
+              <div data-parallax-target class="bg-image js-lazy" data-bg="../img/project15/square-2.png"></div>
             </div>
           </div>
         </div>
@@ -411,40 +413,31 @@
                 Vorgehen & Entscheidungen
               </h2>
               <p class="text-lg text-black mt-24 sm:mt-16">
-                Die grundlegende Entscheidung war ein Reframing: weg vom
-                Konfigurator, hin zur Planungsplattform. Die gesamte
-                Informationsarchitektur wurde am realen mentalen Modell der
-                Planer ausgerichtet — Räume als zentrale Arbeitseinheit,
-                Komponenten als deren Inhalt. In der Projektansicht führt ein
-                raumbasiertes Register durch Geschosse und Räume; jede Zeile
-                trägt Position, Bezeichnung, den monospaced gesetzten
-                Produktschlüssel und die Menge, während ein kontextsensitives
-                Side-Panel Raumdaten, Luftmengen und Anmerkungen bündelt. So
-                bleibt die Übersicht flach, und die Tiefe wird erst auf Abruf
-                sichtbar.
+                Statt eines reinen optischen Rebrushs habe ich die Plattform als
+                Produkt gedacht, das über Jahre und über Ländergrenzen hinweg
+                tragfähig sein muss.
               </p>
               <p class="leading-5xl mt-24 sm:mt-16">
-                Dieses Prinzip der schrittweisen Offenlegung (Progressive
-                Disclosure) trägt sich durch alle Module. Drei Entscheidungen
-                prägten das Ergebnis besonders. Erstens: ein durchdachtes
-                System für kritische Aktionen, das Nutzern auf einen Blick
-                zeigt, wie folgenreich ein Schritt ist, statt jede Löschung
-                gleich zu behandeln. Zweitens: technische Machbarkeit als
-                Design-Input — Umsetzungsgrenzen wurden nicht als Hindernis
-                behandelt, sondern flossen von Anfang an in die Gestaltung
-                ein. Drittens: Barrierefreiheit als Grundlinie statt
-                Nacharbeit, mit WCAG 2.2 AA als verbindlichem Standard von
-                Beginn an, validiert über eigenständige, klickbare
-                Prototypen.
+                Den Kern bildete ein neues, responsiv gedachtes Informations- und
+                Navigationskonzept für ein Sortiment von 60.000 Positionen – mit dem
+                Fokus auf Filterung und Exploration, damit B2B-Kunden das für sie
+                relevante Produkt schnell finden. Parallel habe ich eine eigene
+                UI-Komponenten-Bibliothek aufgebaut: die Grundlage für einen
+                konsistenten, wartbaren und international skalierbaren Auftritt statt
+                einzelner Insellösungen.
               </p>
-              <div class="impact-statement">
-                <p>
-                  „Ein Konfigurator fragt: Welches Produkt? Ein Planer denkt in
-                  Projekten, Räumen und Anforderungen. SCHAKOnext wurde entlang
-                  der Denkweise der Planer gebaut — nicht entlang des
-                  Produktkatalogs."
-                </p>
-              </div>
+              <p class="leading-5xl mt-24 sm:mt-16">
+                Den Markenauftritt habe ich eng mit dem internationalen Marketing-
+                und Designteam abgestimmt, einschließlich der Abstimmung mit dem
+                Design Lead in den USA – so entstand ein einheitliches
+                Erscheinungsbild über die aktiven Ländermärkte hinweg. Den
+                Standard-Checkout von OXID habe ich verschlankt und auf die realen
+                B2B-Abläufe zugeschnitten. Ergänzend wurde ein Konfigurator für
+                komplexe medizinische Sonderanfertigungen (u. a.
+                Kompressionsmaterialien) in das einheitliche Shop-Erlebnis
+                integriert. Alle Konzepte wurden iterativ in Workshops mit dem Kunden
+                und ausgewählten Nutzern verfeinert.
+              </p>
             </div>
           </div>
         </div>
@@ -455,9 +448,39 @@
       <!-- image break start -->
       <section>
         <div class="row no-gutters">
+          <div class="col-md-6">
+            <div data-parallax="0.5" class="ratio ratio-1:1">
+              <div data-parallax-target class="bg-image js-lazy" data-bg="../img/project15/square-3.png"></div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div data-parallax="0.5" class="ratio ratio-1:1">
+              <div data-parallax-target class="bg-image js-lazy" data-bg="../img/project15/square-4.png"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row no-gutters">
           <div class="col-12">
             <div data-parallax="0.5" class="h-100vh">
-              <div data-parallax-target class="bg-image js-lazy" data-bg="img/project-schako/square-1.png"></div>
+              <div data-parallax-target class="bg-image js-lazy" data-bg="../img/project15/wide-7.gif"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row no-gutters">
+          <div class="col-12">
+            <div data-parallax="0.5" class="h-100vh">
+              <div data-parallax-target class="bg-image js-lazy" data-bg="../img/project15/wide-8.gif"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row no-gutters">
+          <div class="col-12">
+            <div data-parallax="0.5" class="h-100vh">
+              <div data-parallax-target class="bg-image js-lazy" data-bg="../img/project15/wide-9.gif"></div>
             </div>
           </div>
         </div>
@@ -474,27 +497,24 @@
                 Wirkung
               </h2>
               <p class="text-lg text-black mt-24 sm:mt-16">
-                Das Reframing verschaffte SCHAKO einen strategischen
-                Einstiegspunkt weiter vorn im Planungs-Workflow — genau dort,
-                wo die Komponentenwahl tatsächlich fällt. Statt einen
-                Konfigurator gegen etablierte Plattformen zu stellen,
-                positioniert SCHAKOnext sich als Planungsumgebung, in der der
-                Katalog nur ein Baustein von mehreren ist.
+                Vormals analoge Prozesse wurden digitalisiert: An die Stelle von
+                Fax-Bestellungen trat ein durchgängiger digitaler B2B-Bestellprozess.
+                Die Plattform ist heute auf Tablet und Smartphone nutzbar und tritt
+                über die aktiven Ländermärkte hinweg mit einem einheitlichen,
+                international abgestimmten Markenauftritt auf.
               </p>
               <p class="leading-5xl mt-24 sm:mt-16">
-                Die erarbeiteten Konzepte bildeten die Grundlage für
-                die Priorisierung der nächsten Ausbaustufe — mit
-                KI-gestützter Vorauslegung, einem Template-Marktplatz und
-                einer integrierten Wissensebene. Für die KI-Funktionen wurden
-                dabei belastbare Designprinzipien gesetzt: Transparenz statt
-                „Magie", durchgängige Reversibilität jeder Vorschlagsaktion
-                sowie Confidence-Scoring und Provenance-Tracking — nicht als
-                Feature, sondern als Voraussetzung dafür, dass Planer den
-                Vorschlägen vertrauen und die fachliche Verantwortung klar
-                zuordenbar bleibt. Der Produktkonfigurator wurde in diesem
-                Zusammenhang ebenfalls redesigned und mit in den
-                Projekt-Workflow eingebettet (siehe nachfolgende Grafik).
+                Der auf B2B-Bedürfnisse zugeschnittene Checkout und die neue
+                Konfigurationsmöglichkeit für Sonderanfertigungen ersetzen manuelle
+                Abwicklung durch Self-Service.
               </p>
+              <div class="impact-statement">
+                <p>
+                  Die Plattform trägt heute rund 200 Mio. € Jahresumsatz und wird als
+                  strategisches Werkzeug konzernweit weiter ausgebaut, um Prozesse
+                  angeschlossener Geschäftsbereiche zu digitalisieren.
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -507,7 +527,15 @@
         <div class="row no-gutters">
           <div class="col-12">
             <div data-parallax="0.5" class="h-100vh">
-              <div data-parallax-target class="bg-image js-lazy" data-bg="img/project-schako/square-2.png"></div>
+              <div data-parallax-target class="bg-image js-lazy" data-bg="../img/project15/wide-1.png"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row no-gutters">
+          <div class="col-12">
+            <div data-parallax="0.5" class="h-100vh">
+              <div data-parallax-target class="bg-image js-lazy" data-bg="../img/project15/wide-2.png"></div>
             </div>
           </div>
         </div>
@@ -516,7 +544,7 @@
 
 
       <!-- Rolle & Zusammenarbeit start -->
-      <section class="layout-pt-lg layout-pb-sm">
+      <section class="layout-pt-lg layout-pb-lg">
         <div class="container">
           <div class="row justify-content-center">
             <div class="col-xl-8 col-lg-9">
@@ -524,19 +552,13 @@
                 Rolle & Zusammenarbeit
               </h2>
               <p class="text-lg text-black mt-24 sm:mt-16">
-                Ich verantwortete die UX/UI über die gesamte Tiefe — von der
-                strategischen Positionierung über Informationsarchitektur und
-                Interaction Design bis zu UX-Writing und Frontend-Prototyping.
+                Es handelt sich nicht um ein abgeschlossenes Projekt, sondern um eine
+                seit 2022 fortlaufende Produktverantwortung.
               </p>
               <p class="leading-5xl mt-24 sm:mt-16">
-                Die Zusammenarbeit lief eng mit Product Ownership und
-                Entwicklung sowie mit fachlichen und standortübergreifenden
-                Stakeholdern; Implementierungsrealität und Datenlage flossen
-                dabei kontinuierlich als Gestaltungsparameter zurück ins
-                Design. Meine Prototypen dienten weniger der Illustration als
-                der Validierung: eigenständige, technisch anschlussfähige
-                Artefakte, an denen Konzepte vor der Umsetzung überprüfbar
-                wurden.
+                Ich arbeite cross-funktional mit der Entwicklung, dem internationalen
+                Marketing- und Designteam sowie dem Design Lead in den USA und
+                stimme Konzepte direkt mit Kunden und Endnutzern ab.
               </p>
             </div>
           </div>
@@ -545,34 +567,33 @@
       <!-- Rolle & Zusammenarbeit end -->
 
 
-      <!-- interaktive Demo start (nur Desktop, siehe .case-embed-section in style.css) -->
-      <section class="case-embed-section layout-pt-sm layout-pb-lg">
-        <div class="container">
-          <div class="row justify-content-center">
-            <div class="col-xl-8 col-lg-9">
-              <p class="text-sm uppercase tracking-md text-light mb-16">
-                Interaktiv ausprobieren
-              </p>
-              <h2 class="text-3xl fw-600 mb-24">
-                Konzept & Design live erleben
-              </h2>
-              <p class="text-lg text-black mb-24">
-                Das Konzept lässt sich direkt im Browser bedienen — als
-                eigenständiger, klickbarer Prototyp ohne Login. Dieser
-                Prototyp zeigt beispielhaft die Bearbeitung von Massendaten
-                mit Veränderungsmöglichkeiten der Interface-Architektur:
-                Seitenpanel und Navigation sind per Klick ausblendbar, die
-                Density der Listeneinträge ist steuerbar, und umfangreiche
-                Spalten-Optionen lassen sich explorieren.
-              </p>
+      <!-- image break start -->
+      <section>
+        <div class="row no-gutters">
+          <div class="col-12">
+            <div data-parallax="0.5" class="h-100vh">
+              <div data-parallax-target class="bg-image js-lazy" data-bg="../img/project15/wide-3.png"></div>
             </div>
           </div>
         </div>
-        <div class="container-fluid px-0">
-          <iframe class="case-embed" src="schako-projektliste/Projektliste.dc.html" title="SCHAKOnext Projektliste — interaktive Demo" loading="lazy"></iframe>
+
+        <div class="row no-gutters">
+          <div class="col-12">
+            <div data-parallax="0.5" class="h-100vh">
+              <div data-parallax-target class="bg-image js-lazy" data-bg="../img/project15/wide-4.png"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row no-gutters">
+          <div class="col-12">
+            <div data-parallax="0.5" class="h-100vh">
+              <div data-parallax-target class="bg-image js-lazy" data-bg="../img/project15/wide-6.png"></div>
+            </div>
+          </div>
         </div>
       </section>
-      <!-- interaktive Demo end -->
+      <!-- image break end -->
 
 
       <!-- footer start -->
@@ -585,7 +606,7 @@
             <div class="row y-gap-48 justify-content-between">
               <div class="col-lg-auto col-sm-12">
                 <a href="index.html" class="footer__logo text-white">
-                  <img class="js-lazy" src="#" data-src="img/logo/logo-light.svg" alt="Logo">
+                  <img class="js-lazy" src="#" data-src="../img/logo/logo-light.svg" alt="Logo">
                 </a>
               </div>
 
@@ -659,8 +680,8 @@
 
 
   <!-- JavaScript -->
-  <script src="js/vendors.js"></script>
-  <script src="js/main.js"></script>
+  <script src="../js/vendors.js"></script>
+  <script src="../js/main.js"></script>
 
 </body>
 
