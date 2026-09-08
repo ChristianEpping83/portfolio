@@ -466,6 +466,101 @@ p {
   box-shadow: 0 6px 24px -2px rgba(119, 139, 165, 0.2);
 }
 
+/* Case Studies — eingebettetes BPMN-Prozessdiagramm (aktuell nur
+   schako.html), als horizontal scrollbares Inline-SVG statt Bild, damit
+   es am Desktop frei explorierbar ist (Hover hebt einzelne Schritte
+   hervor, native Tooltips zeigen Details). Gleiche Desktop-only-Regel
+   wie .case-embed-section. */
+.bpmn-embed-section {
+  display: none;
+}
+
+@media (min-width: 1260px) {
+  .bpmn-embed-section {
+    display: block;
+  }
+}
+
+.bpmn-card {
+  width: 90%;
+  margin: 0 auto;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 0;
+  box-shadow: 0 6px 24px -2px rgba(119, 139, 165, 0.2);
+  overflow: hidden;
+  background: #fff;
+}
+
+.bpmn-legend {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1.375rem;
+  padding: 1.25rem 1.5rem 0;
+  font-size: 0.8rem;
+  color: var(--font-dark);
+}
+
+.bpmn-legend-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4375rem;
+}
+
+.bpmn-legend-item svg {
+  flex-shrink: 0;
+}
+
+.bpmn-scroll {
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 1.5rem 1.5rem 1rem;
+  scrollbar-width: thin;
+  scrollbar-color: #ccc transparent;
+}
+
+.bpmn-scroll::-webkit-scrollbar {
+  height: 10px;
+}
+
+.bpmn-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.bpmn-scroll::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 8px;
+}
+
+.bpmn-hint {
+  padding: 0 1.5rem 1rem;
+  font-size: 0.8rem;
+  color: var(--font-dark);
+  opacity: 0.7;
+}
+
+/* Einzelne BPMN-Elemente: Hover hebt Form + Beschriftung leicht an und
+   färbt den Rahmen in der Signature-Akzentfarbe; SVG-<title> liefert den
+   nativen Tooltip mit Detailtext. */
+.bpmn-node {
+  transform-box: fill-box;
+  transform-origin: center;
+  transition: transform 0.18s ease, filter 0.18s ease;
+}
+
+.bpmn-node:hover {
+  transform: scale(1.045);
+  filter: drop-shadow(0 6px 14px rgba(255, 0, 46, 0.28));
+}
+
+.bpmn-node .bpmn-shape {
+  transition: stroke 0.18s ease;
+}
+
+.bpmn-node:hover .bpmn-shape {
+  stroke: var(--brand) !important;
+}
+
 /* Hauptmenü — "Impressum" / "Datenschutz": deutlich kleiner und gedämpfter
    als "Arbeiten" / "Über mich" gehalten, damit der Fokus im Menü auf den
    inhaltlichen Punkten liegt. */
